@@ -298,11 +298,9 @@ footer p {
   font-weight: 600;
   color: #1a365d;
 }
-/* ---------- LINK STYLES (Fixed Contrast) ---------- */
 
-/* All links in the main content */
 main a {
-  color: #1a365d; /* Dark navy – 11.5:1 contrast on white */
+  color: #1a365d; 
   text-decoration: underline;
   text-decoration-color: #38a169;
   text-underline-offset: 2px;
@@ -310,11 +308,11 @@ main a {
 }
 
 main a:visited {
-  color: #4a5568; /* Dark gray – 7.8:1 contrast on white */
+  color: #4a5568; 
 }
 
 main a:hover {
-  color: #38a169; /* Green – 4.5:1 contrast on white (passes AA) */
+  color: #38a169; 
   text-decoration-color: #1a365d;
 }
 
