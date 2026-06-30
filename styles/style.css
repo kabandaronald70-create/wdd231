@@ -1,7 +1,4 @@
-/* ============================================================
-   FILE: small.css
-   DESCRIPTION: Mobile-first base styles for WDD 231 Home Page
-   ============================================================ */
+
 
 /* ---------- RESET & BASE ---------- */
 * {
@@ -13,8 +10,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #2d3748;
-  background: #f7fafc;
+  color: #2d3748;              
+  background: #f7fafc;          
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -26,7 +23,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: #1a365d;
+  background: #1a365d;         
   border-radius: 0 0 12px 12px;
   margin: 0 -1rem;
   flex-wrap: wrap;
@@ -41,12 +38,13 @@ header {
 .logo-container img {
   width: 50px;
   height: 50px;
+  
 }
 
 .my-name {
   font-weight: 700;
   font-size: 1.4rem;
-  color: #ffffff;
+  color: #ffffff;               /* White text for contrast */
 }
 
 /* ---------- MOBILE NAVIGATION ---------- */
@@ -73,24 +71,18 @@ header {
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff;               /* White nav links */
   font-weight: 500;
   border-radius: 4px;
   transition: background 0.2s;
 }
 
-/* ---------- NAVIGATION ACTIVE STATE (Fixed Contrast) ---------- */
-#primaryNav a.active {
-  background: #276749; /* Dark green – passes AA and AAA */
-  color: #ffffff;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+#primaryNav a:hover {
+  background: #2b6cb0;          /* Brighter blue on hover */
 }
 
-/* Keep hover state consistent */
-#primaryNav a:hover {
-  background: #2b6cb0;
+#primaryNav a.active {
+  background: #f10707;          /* Red for active/current page */
   color: #ffffff;
 }
 
@@ -126,20 +118,18 @@ section {
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #1a365d;
+  color: #1a365d;               /* Dark navy */
   text-align: center;
-  border-bottom: 3px solid #38a169;
+  border-bottom: 3px solid #38a169; /* Green underline */
   padding-bottom: 0.5rem;
 }
 
-h2,
-h3,
-h4 {
+h2, h3, h4 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.3rem;
-  color: #1a365d;
-  border-bottom: 3px solid #38a169;
+  color: #1a365d;               /* Dark navy */
+  border-bottom: 3px solid #38a169; /* Green underline */
 }
 
 h3 {
@@ -200,13 +190,13 @@ h4 {
 }
 
 .filter-buttons button.active {
-  background: #38a169;
+  background: #38a169;          /* Green active */
   color: #ffffff;
   border-color: #38a169;
 }
 
 .filter-buttons button.active:hover {
-  background: #2f855a;
+  background: #2f855a;          /* Darker green on hover */
   border-color: #2f855a;
 }
 
@@ -222,7 +212,7 @@ h4 {
   background: #f7fafc;
   padding: 1rem;
   border-radius: 8px;
-  border-left: 6px solid #2d0edd;
+  border-left: 6px solid #2d0edd; /* Green border */
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
@@ -232,8 +222,8 @@ h4 {
 }
 
 .course-card.completed {
-  background: #f0fff4;
-  border-left-color: #2f855a;
+  background: #f0fff4;          /* Very light green */
+  border-left-color: #2f855a;   /* Darker green for completed */
 }
 
 .course-card h3 {
@@ -242,6 +232,7 @@ h4 {
   color: #1a365d;
   border-bottom: none;
 }
+
 
 .course-card p {
   font-size: 0.95rem;
@@ -261,7 +252,7 @@ h4 {
 
 /* ---------- FOOTER ---------- */
 footer {
-  border-top: 3px solid #38a169;
+  border-top: 3px solid #38a169; /* Green border */
   padding: 1.2rem 0;
   text-align: center;
   font-size: 1.2rem;
@@ -299,42 +290,60 @@ footer p {
   font-weight: 600;
   color: #1a365d;
 }
-/* ---------- LINK STYLES (Fixed Contrast) ---------- */
 
-/* All links in the main content */
-main a {
-  color: #1a365d; /* Dark navy – 11.5:1 contrast on white */
-  text-decoration: underline;
-  text-decoration-color: #38a169;
-  text-underline-offset: 2px;
-  transition: color 0.2s, text-decoration-color 0.2s;
+/* ============================================================
+   MEDIA QUERIES
+   ============================================================ */
+
+/* ---------- TABLET / SMALL DESKTOP (>= 640px) ---------- */
+@media (min-width: 640px) {
+  #menuToggle {
+    display: none;
+  }
+
+  #primaryNav {
+    max-height: none !important;
+    overflow: visible;
+    width: auto;
+  }
+
+  #primaryNav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  header {
+    flex-wrap: nowrap;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  #courses-section {
+    grid-column: 1 / -1;
+  }
+
+  section:not(#courses-section) {
+    margin-bottom: 0;
+  }
 }
 
-main a:visited {
-  color: #4a5568; /* Dark gray – 7.8:1 contrast on white */
+/* ---------- LARGE DESKTOP (>= 1024px) ---------- */
+@media (min-width: 1024px) {
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-main a:hover {
-  color: #38a169; /* Green – 4.5:1 contrast on white (passes AA) */
-  text-decoration-color: #1a365d;
-}
-
-main a:focus-visible {
-  outline: 3px solid #38a169;
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #4a5568; /* Dark gray – 7.8:1 contrast on white */
-  opacity: 1; /* Ensure opacity doesn't reduce contrast */
-}
-
-.text-light,
-.text-muted,
-.subtle-text {
-  color: #4a5568; /* Use dark gray instead of light gray */
-}
-
 
