@@ -1,0 +1,56 @@
+/* ============================================================
+   FILE: larger.css
+   DESCRIPTION: Styles for larger screens (tablet/desktop)
+   ============================================================ */
+
+/* ---------- TABLET / SMALL DESKTOP (>= 640px) ---------- */
+@media (min-width: 640px) {
+  #menuToggle {
+    display: none;
+  }
+
+  #primaryNav {
+    max-height: none !important;
+    overflow: visible;
+    width: auto;
+  }
+
+  #primaryNav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  header {
+    flex-wrap: nowrap;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  #courses-section {
+    grid-column: 1 / -1;
+  }
+
+  section:not(#courses-section) {
+    margin-bottom: 0;
+  }
+}
+
+/* ---------- LARGE DESKTOP (>= 1024px) ---------- */
+@media (min-width: 1024px) {
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
