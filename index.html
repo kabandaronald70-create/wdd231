@@ -42,33 +42,31 @@
 
     <!-- ========== MAIN ========== -->
     <main>
-
-        <!-- SIDEBAR NAVIGATION (visible on desktop, toggled on mobile) -->
-        
-        <!-- CONTENT AREA -->
         <div class="content-area">
 
             <h1>Home</h1>
 
             <!-- About Me -->
-            <section id="about-student" class="about-student-box">
+            <!-- Outer section: provides the white card, shadow, rounded corners -->
+<section id="about-student" class="about-student-box">
   <div class="about-student-grid">
-    <!-- LEFT: About Me text -->
-    <div class="about-text">
+    
+    <!-- INNER SECTION 1: About Me -->
+    <section class="about-text">
       <h2>About Me</h2>
       <p>
         Hello! I'm Ronald, a passionate web developer currently pursuing a Web and Computer Programming certificate. With a Bachelor's degree in Statistics, I bring a unique analytical perspective to web development. My background allows me to bridge the gap between data-driven insights and user-centric design. I love building interactive web applications that solve real-world problems, leveraging my skills in JavaScript, HTML, CSS, and data visualization. I am committed to continuous learning and creating accessible, efficient, and meaningful digital experiences.
       </p>
-    </div>
+    </section>
 
-    <!-- RIGHT: Student Photo -->
-    <div class="student-photo-wrapper">
+    <!-- INNER SECTION 2: Student Photo -->
+    <section class="student-photo-wrapper">
       <h2>Student Photo</h2>
       <img src="images/profile-1.jpeg" alt="Headshot of Ronald Kabanda, web development student" class="student-photo" loading="lazy" decoding="async" />
-    </div>
+    </section>
+
   </div>
 </section>
-
             <!-- Web Certificate Courses -->
             <section id="courses-section">
                 <h2>Web&Computer Programming Certificate Courses</h2>
