@@ -1,56 +1,108 @@
 /* ============================================================
-   FILE: larger.css
-   DESCRIPTION: Styles for larger screens (tablet/desktop)
+   FILE: larger.css – tablet & desktop
    ============================================================ */
 
-/* ---------- TABLET / SMALL DESKTOP (>= 640px) ---------- */
 @media (min-width: 640px) {
+  /* ---------- HIDE HAMBURGER ---------- */
   #menuToggle {
     display: none;
   }
 
+  /* ---------- NAVIGATION: left‑aligned, tighter ---------- */
   #primaryNav {
+    width: 100%;
     max-height: none !important;
     overflow: visible;
-    width: auto;
-  }
-
-  #primaryNav ul {
-    flex-direction: row;
-    gap: 1.5rem;
+    background: transparent;
+    box-shadow: none;
+    margin-top: 0.25rem;          /* reduce gap below logo */
     padding: 0;
   }
 
-  header {
-    flex-wrap: nowrap;
+  #primaryNav ul {
+    flex-direction: row !important;
+    justify-content: flex-start;   /* left aligned */
+    gap: 0.5rem;                  /* small space between links */
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
+  #primaryNav a {
+    padding: 0.4rem 1rem;          /* reduce horizontal padding */
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  #primaryNav a.active {
+    background: #276749;
+    color: #ffffff;
+  }
+
+  #primaryNav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+  }
+
+  /* ---------- MAIN CONTENT ---------- */
+  main {
+    margin: 2rem 0;
+  }
+
+  /* ---------- MERGED ABOUT + STUDENT (two‑column) ---------- */
+  .about-student-grid {
+    display: flex;
+    flex-direction: row;          /* side by side */
+    gap: 2rem;
+    align-items: flex-start;      /* align tops */
+  }
+
+  .about-text {
+    flex: 1;                      /* takes remaining space */
+  }
+
+  .student-photo-wrapper {
+    flex: 0 0 40%;                /* fixed width, 40% of container */
+    max-width: 40%;
+  }
+
+  .student-photo-wrapper h2 {
+    margin-top: 0;
+    border-bottom: 3px solid #38a169;
+    padding-bottom: 0.3rem;
+    color: #1a365d;
+    text-align: top;
+  }
+
+  .student-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+  /* ---------- COURSE GRID (2 columns) ---------- */
   .course-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-
-  main h1 {
-    grid-column: 1 / -1;
-  }
-
-  #courses-section {
-    grid-column: 1 / -1;
-  }
-
-  section:not(#courses-section) {
-    margin-bottom: 0;
+  /* ---------- SOCIAL ICONS ---------- */
+  .social-links {
+    font-size: 2.2rem;
+    gap: 2.5rem;
   }
 }
 
-/* ---------- LARGE DESKTOP (>= 1024px) ---------- */
+/* ---------- LARGE SCREENS (≥1024px) ---------- */
 @media (min-width: 1024px) {
   .course-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .social-links {
+    font-size: 2.5rem;
+    gap: 3rem;
   }
 }

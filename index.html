@@ -1,83 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Home Page – Ronald Kabanda</title>
-  <meta name="description" content="Ronald Kabanda's WDD 231 course portfolio for the Web and Computer Programming certificate. Explore projects, coursework, and skills in web development.">
-  <meta name="author" content="Ronald Kabanda">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Home Page – Ronald Kabanda</title>
+    <meta name="description" content="Ronald Kabanda's WDD 231 course portfolio for the Web and Computer Programming certificate. Explore projects, coursework, and skills in web development." />
+    <meta name="author" content="Ronald Kabanda" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <link rel="stylesheet" href="styles/larger.css">
-   <link rel="stylesheet" href="styles/smaller.css">
-  <script defer src="scripts/script.js" ></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/smaller.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="images/ict-icon-2.png" alt="Site Logo" width="50" height="50">
-    
-      <span class="my-name">WEB&COMPUTER PROGRAMMING CERTIFICATE HOMEPAGE</span>
-    </div>
-    <button id="menuToggle" aria-label="Toggle navigation menu">☰</button>
-    <nav id="primaryNav">
-      <ul>
-    
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="#">Chamber Project</a></li>
-        <li><a href="#">Final Project</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h1>Home</h1>
-    <section id="about">
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="logo-container">
+            <img src="images/ict-icon-2.png" alt="Site Logo" width="50" height="50" />
+            <span class="my-name">WEB&COMPUTER PROGRAMMING CERTIFICATE HOMEPAGE</span>
+        </div>
+        <button id="menuToggle" aria-label="Toggle navigation menu">☰</button>
+        <nav id="primaryNav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main>
+
+        <!-- SIDEBAR NAVIGATION (visible on desktop, toggled on mobile) -->
+        
+        <!-- CONTENT AREA -->
+        <div class="content-area">
+
+            <h1>Home</h1>
+
+            <!-- About Me -->
+            <section id="about-student" class="about-student-box">
+  <div class="about-student-grid">
+    <!-- LEFT: About Me text -->
+    <div class="about-text">
       <h2>About Me</h2>
-      
-      <div class="about-container">
-        <p>
-         Hello! I'm Ronald, a passionate web developer currently pursuing a Web and Computer Programming certificate. With a Bachelor's degree in Statistics, I bring a unique analytical perspective to web development. My background allows me to bridge the gap between data-driven insights and user-centric design. I love building interactive web applications that solve real-world problems, leveraging my skills in JavaScript, HTML, CSS, and data visualization. I am committed to continuous learning and creating accessible, efficient, and meaningful digital experiences.
-        </p>
-      </div>
-    </section>
-
-    <section id="student">
-        <h2>Student Photo</h2>
-        <div class="student-photo">
-        <img src="images/profile-1.jpeg" alt="Headshot of Ronald Kabanda, web development student" class="student-photo">
-      </div>
-    </section>
-
-    <section id="courses-section">
-      <h2>Web&Computer Programming Certificate Courses</h2>
-      <div class="filter-buttons">
-        <button id="filterAll" class="active">All Courses</button>
-        <button id="filterWDD">WDD Courses</button>
-        <button id="filterCSE">CSE Courses</button>
-      </div>
-      <div id="courseCards" class="course-grid">
-
-      </div>
-      <p id="totalCredits">Total Credits: 0</p>
-    </section>
-
-
-  </main>
-
-  <footer>
-    <div class="social-links">
-      <a href="https://github.com/kabandaronald70-create" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/kabandaronald70@gmail.com" target="_blank">LinkedIn</a>
-      <a href="https://twitter.com/@KABANDARONALD13" target="_blank">Twitter</a>
+      <p>
+        Hello! I'm Ronald, a passionate web developer currently pursuing a Web and Computer Programming certificate. With a Bachelor's degree in Statistics, I bring a unique analytical perspective to web development. My background allows me to bridge the gap between data-driven insights and user-centric design. I love building interactive web applications that solve real-world problems, leveraging my skills in JavaScript, HTML, CSS, and data visualization. I am committed to continuous learning and creating accessible, efficient, and meaningful digital experiences.
+      </p>
     </div>
-    
-    <p id="copyright"></p> 
-    <p id="lastModified"></p> 
-  </footer>
+
+    <!-- RIGHT: Student Photo -->
+    <div class="student-photo-wrapper">
+      <h2>Student Photo</h2>
+      <img src="images/profile-1.jpeg" alt="Headshot of Ronald Kabanda, web development student" class="student-photo" />
+    </div>
+  </div>
+</section>
+
+            <!-- Web Certificate Courses -->
+            <section id="courses-section">
+                <h2>Web&Computer Programming Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button id="filterAll" class="active">All Courses</button>
+                    <button id="filterWDD">WDD Courses</button>
+                    <button id="filterCSE">CSE Courses</button>
+                </div>
+                <div id="courseCards" class="course-grid">
+                    <!-- course cards rendered by JavaScript -->
+                </div>
+                <p id="totalCredits">Total Credits: 0</p>
+            </section>
+
+            <!-- Social Media -->
+           <section id="social-media">
+    <div class="social-links">
+        <a href="https://github.com/kabandaronald70-create" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/kabanda-ronald-68155b356" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</section>
+
+        </div>
+      
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

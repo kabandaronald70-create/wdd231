@@ -38,7 +38,6 @@ const courses = [
   { code: 'CSE 110', name: 'Introduction to Programming', credits: 3, completed: true },
   { code: 'CSE 111', name: 'Programming with Functions', credits: 3, completed: true },
   { code: 'CSE 210', name: 'Programming with Classes', credits: 3, completed: true },
-  { code: 'WDD 330', name: 'Web Frontend Development II', credits: 3, completed: false }
 ];
 
 // 3b. DOM references
