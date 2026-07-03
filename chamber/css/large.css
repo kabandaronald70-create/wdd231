@@ -1,0 +1,43 @@
+/* ----- Large View (≥ 32rem / 512px) ----- */
+@media only screen and (min-width: 32rem) {
+    /* Header & Navigation */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #primary-nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        margin-left: auto;
+    }
+
+    /* Grid: 2 columns */
+    #members-container.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer: side by side */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .social-media {
+    justify-content: flex-start;   
+}
+}
+
+/* ----- Larger screens (≥ 60rem / 960px) ----- */
+@media only screen and (min-width: 60rem) {
+    #members-container.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

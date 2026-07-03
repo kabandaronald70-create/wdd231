@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Mubende Hardware & Supplies",
+        "address": "Plot 12, Kampala Road, Mubende",
+        "phone": "+256 772 345 678",
+        "website": "https://mubendehardware.ug",
+        "image": "hardware-supplies.jpg",
+        "membership": 3,
+        "tagline": "Your one-stop shop for building materials.",
+        "email": "info@mubendehardware.ug"
+    },
+    {
+        "name": "Mubende Central Medical Clinic",
+        "address": "Plot 8, Hospital Road, Mubende",
+        "phone": "+256 789 012 345",
+        "website": "https://mubendeclinic.ug",
+        "image": "medical-clinic.jpg",
+        "membership": 2,
+        "tagline": "Caring for the community since 2005.",
+        "email": "admin@mubendeclinic.ug"
+    },
+    {
+        "name": "Riverside Hotel & Restaurants",
+        "address": "Plot 3, River Street, Mubende",
+        "phone": "+256 703 456 789",
+        "website": "https://riversidehotel.ug",
+        "image": "riverside-hotel.webp",
+        "membership": 3,
+        "tagline": "Luxury accommodation and fine dining.",
+        "email": "reservations@riverside.ug"
+    },
+    {
+        "name": "Mubende Digital Solutions",
+        "address": "Suite 2, Commerce Plaza, Mubende",
+        "phone": "+256 704 567 890",
+        "website": "https://mubendedigital.ug",
+        "image": "digital-solutions.webp",
+        "membership": 1,
+        "tagline": "Innovative IT services for businesses.",
+        "email": "info@mubendedigital.ug"
+    },
+    {
+        "name": "Sunrise Bakery & Confectionery",
+        "address": "Plot 22, Main Street, Mubende",
+        "phone": "+256 705 678 901",
+        "website": "https://sunrisebakery.ug",
+        "image": "sunrise-bakery.webp",
+        "membership": 1,
+        "tagline": "Fresh bread and pastries every morning.",
+        "email": "order@sunrisebakery.ug"
+    },
+    {
+        "name": "Mubende Farmers Cooperative",
+        "address": "Cooperative House, Mubende",
+        "phone": "+256 706 789 012",
+        "website": "https://mubendefarmers.ug",
+        "image": "farmers-cooperative.webp",
+        "membership": 2,
+        "tagline": "Empowering local farmers through collective action.",
+        "email": "secretary@mubendefarmers.ug"
+    },
+    {
+        "name": "Mubende Transport & Logistics",
+        "address": "Plot 15, Station Road, Mubende",
+        "phone": "+256 707 890 123",
+        "website": "https://mubendetransport.ug",
+        "image": "transport-logistics.jpg",
+        "membership": 3,
+        "tagline": "Reliable goods delivery across the Central Region.",
+        "email": "dispatch@mubendetransport.ug"
+    },
+    {
+        "name": "Mubende International School",
+        "address": "Plot 45, Teachers Avenue, Mubende",
+        "phone": "+256 708 901 234",
+        "website": "https://mubendeinternational.ug",
+        "image": "international-school.webp",
+        "membership": 2,
+        "tagline": "Excellence in education from kindergarten to high school.",
+        "email": "admissions@mubendeinternational.ug"
+    },
+    {
+        "name": "Shekinah Beauty & Wellness Spa",
+        "address": "Suite 5, Victoria Mall, Mubende",
+        "phone": "+256 709 012 345",
+        "website": "https://shekinahspa.ug",
+        "image": "shekinah-spa.webp",
+        "membership": 1,
+        "tagline": "Rejuvenate your mind, body, and spirit.",
+        "email": "spa@shekinah.ug"
+    }
+]
