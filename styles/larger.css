@@ -21,7 +21,7 @@
 
   #primaryNav ul {
     flex-direction: row !important;
-    justify-content: flex-start;   /* left aligned */
+    justify-content: flex-end;   /* left aligned */
     gap: 0.5rem;                  /* small space between links */
     padding: 0;
     background: transparent;

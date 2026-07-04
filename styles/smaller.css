@@ -21,10 +21,10 @@ body {
 /* ---------- HEADER (flex container) ---------- */
 header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1rem;
   background: #1a365d;
   border-radius: 0 0 12px 12px;
   margin: 0 -1rem;
@@ -33,7 +33,9 @@ header {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  flex-shrink: 1;            
+  min-width: 0;  
 }
 
 .logo-container img {
@@ -43,9 +45,10 @@ header {
 
 .my-name {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   color: #ffffff;
   line-height: 1.2;
+  
 }
 
 /* Hamburger button */
@@ -53,12 +56,19 @@ header {
   background: transparent;
   border: 2px solid #ffffff;
   color: #ffffff;
-  font-size: 2rem;
-  padding: 0.2rem 0.6rem;
+  font-size: 1.6rem;          
+  padding: 0.15rem 0.5rem;
   cursor: pointer;
   line-height: 1;
   border-radius: 6px;
   transition: background 0.2s;
+  flex-shrink: 0;              
+  margin-left: 0.5rem;         
+  min-width: 44px;             
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #menuToggle:hover {
@@ -72,8 +82,8 @@ header {
   overflow: hidden;
   transition: max-height 0.35s ease;
   background: #ffffff;
-  border-radius: 12px;
-  margin-top: 1rem;          
+  border-radius: 8px;
+  margin-top: 0.75rem;          
   box-shadow: 0 4px 12px rgba(26, 54, 93, 0.08);
 }
 
@@ -85,19 +95,25 @@ header {
   list-style: none;
   display: flex;
   flex-direction: column;    
-  gap: 0.25rem;
-  padding: 1rem;
-  text-align: left;
+  gap: 0;
+  padding: 0.5rem 0;
+  margin: 0;
+  text-align: right;
 }
 
 #primaryNav a {
   display: block;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.25rem;
   text-decoration: none;
   font-weight: 600;
   color: #1a365d;
-  border-radius: 6px;
+  border-radius: 0;
+  border-bottom: 1px solid #edf2f7;
   transition: background 0.2s, color 0.2s;
+}
+
+#primaryNav a:last-child {
+  border-bottom: none;
 }
 
 #primaryNav a.active {
