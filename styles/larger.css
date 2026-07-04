@@ -83,6 +83,15 @@
     display: block;
   }
 
+  .split-row {
+  flex-direction: row;      
+  gap: 2rem;
+}
+
+.split-row > section {
+  flex: 1;                 
+}
+
   /* ---------- COURSE GRID (2 columns) ---------- */
   .course-grid {
     grid-template-columns: repeat(2, 1fr);

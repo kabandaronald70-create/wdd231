@@ -126,6 +126,12 @@ main {
   gap: 1.5rem;
 }
 
+.split-row {
+  display: flex;
+  flex-direction: column;   /* stacked on mobile */
+  gap: 1.5rem;
+}
+
 /* ---------- MERGED ABOUT + STUDENT (mobile) ---------- */
 .about-student-box {
   background: #ffffff;
