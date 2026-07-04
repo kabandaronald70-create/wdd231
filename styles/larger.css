@@ -53,17 +53,17 @@
   /* ---------- MERGED ABOUT + STUDENT (two‑column) ---------- */
   .about-student-grid {
     display: flex;
-    flex-direction: row;          /* side by side */
+    flex-direction: row;         
     gap: 2rem;
-    align-items: flex-start;      /* align tops */
+    align-items: flex-start;     
   }
 
   .about-text {
-    flex: 1;                      /* takes remaining space */
+    flex: 1;                   
   }
 
   .student-photo-wrapper {
-    flex: 0 0 40%;                /* fixed width, 40% of container */
+    flex: 0 0 40%;               
     max-width: 40%;
   }
 
@@ -72,7 +72,7 @@
     border-bottom: 3px solid #38a169;
     padding-bottom: 0.3rem;
     color: #1a365d;
-  
+    text-align: left;
   }
 
   .student-photo {
