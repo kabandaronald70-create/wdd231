@@ -1,22 +1,31 @@
-/* ----- Large View (≥ 32rem / 512px) ----- */
+/* ====== LARGER.CSS – Tablet & Desktop Media Queries ====== */
+
+/* ----- Tablet: ≥ 512px (32rem) ----- */
 @media only screen and (min-width: 32rem) {
-    /* Header & Navigation */
+    /* Header */
     header {
         flex-direction: row;
         justify-content: space-between;
         padding: 1rem 2rem;
     }
+    h1 {
+        font-size: 1.8rem;
+    }
 
+    /* Navigation – show inline */
     #menu-toggle {
         display: none;
     }
-
     #primary-nav {
         display: flex !important;
         flex-direction: row;
         justify-content: flex-end;
         gap: 1.5rem;
         margin-left: auto;
+        width: auto;
+    }
+    #primary-nav a {
+        padding: 0.5rem 0.75rem;
     }
 
     /* Grid: 2 columns */
@@ -24,20 +33,41 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Footer: side by side */
+    /* Footer: side-by-side */
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
+        gap: 2rem;
     }
     .social-media {
-    justify-content: flex-start;   
-}
+        justify-content: flex-start;
+        margin: 0;
+    }
 }
 
-/* ----- Larger screens (≥ 60rem / 960px) ----- */
+/* ----- Desktop: ≥ 960px (60rem) ----- */
 @media only screen and (min-width: 60rem) {
+    h1 {
+        font-size: 2rem;
+    }
+
     #members-container.grid-view {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-card {
+        padding: 1.25rem;
+    }
+
+    .directory-controls h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ----- Extra Large: ≥ 1200px (75rem) ----- */
+@media only screen and (min-width: 75rem) {
+    #members-container.grid-view {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

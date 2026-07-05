@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mubende Chamber of Commerce - Directory</title>
-    <meta name="description" content="Directory of member businesses of the Mubende Chamber of Commerce.">
+    <title>Mubende Chamber of Commerce – Directory</title>
+    <meta name="description" content="Directory of member businesses of the Mubende Chamber of Commerce. Find local businesses, services, and contact information.">
     <meta name="author" content="Ronald Kabanda">
 
-    <!-- Facebook Open Graph -->
-    <meta property="og:title" content="Mubende Chamber of Commerce">
+    <!-- ====== Facebook Open Graph ====== -->
+    <meta property="og:title" content="Mubende Chamber of Commerce – Member Directory">
     <meta property="og:type" content="website">
+    <!-- 🔽 REPLACE with YOUR actual image URL -->
     <meta property="og:image" content="https://yourgithubpages.github.io/wdd231/chamber/images/og-image.jpg">
+    <!-- 🔽 REPLACE with YOUR actual page URL -->
     <meta property="og:url" content="https://yourgithubpages.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Supporting local businesses in Mubende Municipality.">
+    <meta property="og:description" content="Supporting local businesses in Mubende Municipality. Find member companies, services, and contact information.">
     <meta property="og:locale" content="en_US">
     <meta name="theme-color" content="#1B3A4B">
 
-    <script type="application/ld+json">
+    <!-- ====== JSON-LD Structured Data ====== -->
+     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Mubende Chamber of Commerce",
         "url": "https://yourgithubpages.github.io/wdd231/chamber/directory.html",
-        "logo": "https://yourgithubpages.github.io/wdd231/chamber/images/Mubende chamber of commerce.png",
+        "logo": "https://yourgithubpages.github.io/wdd231/chamber/images/Mubende%20chamber%20of%20commerce.png",
         "sameAs": [
             "https://facebook.com/kabandaronaldofficial",
             "https://twitter.com/KABANDARONALD13",
@@ -38,166 +41,88 @@
     }
     </script>
 
-    <!-- Favicon -->
+    <!-- ====== Favicon ====== -->
     <link rel="icon" href="images/favicon_io.ico">
+    <link rel="apple-touch-icon" href="images/favicon_io.ico">
     <link rel="canonical" href="https://yourgithubpages.github.io/wdd231/chamber/directory.html">
     <meta name="robots" content="index, follow">
 
-    <!-- CSS -->
-    <link rel="preload" href="css/small.css" as="style">
-    <link rel="preload" href="images/Mubende chamber of commerce.png" as="image">
+    <!-- ====== CSS (order matters: normalize → small → larger) ====== -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- ====== Preload critical assets ====== -->
+    <link rel="preload" href="images/Mubende%20chamber%20of%20commerce.png" as="image">
+
+    <!-- ====== JavaScript ====== -->
     <script src="js/directory.js" defer></script>
-    <script id="members-data" type="application/json">
-    [
-        {
-            "name": "Mubende Hardware & Supplies",
-            "address": "Plot 12, Kampala Road, Mubende",
-            "phone": "+256 772 345 678",
-            "website": "https://mubendehardware.ug",
-            "image": "hardware-supplies.jpg",
-            "membership": 3,
-            "tagline": "Your one-stop shop for building materials.",
-            "email": "info@mubendehardware.ug"
-        },
-        {
-            "name": "Mubende Central Medical Clinic",
-            "address": "Plot 8, Hospital Road, Mubende",
-            "phone": "+256 789 012 345",
-            "website": "https://mubendeclinic.ug",
-            "image": "medical-clinic.jpg",
-            "membership": 2,
-            "tagline": "Caring for the community since 2005.",
-            "email": "admin@mubendeclinic.ug"
-        },
-        {
-            "name": "Riverside Hotel & Restaurants",
-            "address": "Plot 3, River Street, Mubende",
-            "phone": "+256 703 456 789",
-            "website": "https://riversidehotel.ug",
-            "image": "riverside-hotel.webp",
-            "membership": 3,
-            "tagline": "Luxury accommodation and fine dining.",
-            "email": "reservations@riverside.ug"
-        },
-        {
-            "name": "Mubende Digital Solutions",
-            "address": "Suite 2, Commerce Plaza, Mubende",
-            "phone": "+256 704 567 890",
-            "website": "https://mubendedigital.ug",
-            "image": "digital-solutions.webp",
-            "membership": 1,
-            "tagline": "Innovative IT services for businesses.",
-            "email": "info@mubendedigital.ug"
-        },
-        {
-            "name": "Sunrise Bakery & Confectionery",
-            "address": "Plot 22, Main Street, Mubende",
-            "phone": "+256 705 678 901",
-            "website": "https://sunrisebakery.ug",
-            "image": "sunrise-bakery.webp",
-            "membership": 1,
-            "tagline": "Fresh bread and pastries every morning.",
-            "email": "order@sunrisebakery.ug"
-        },
-        {
-            "name": "Mubende Farmers Cooperative",
-            "address": "Cooperative House, Mubende",
-            "phone": "+256 706 789 012",
-            "website": "https://mubendefarmers.ug",
-            "image": "farmers-cooperative.webp",
-            "membership": 2,
-            "tagline": "Empowering local farmers through collective action.",
-            "email": "secretary@mubendefarmers.ug"
-        },
-        {
-            "name": "Mubende Transport & Logistics",
-            "address": "Plot 15, Station Road, Mubende",
-            "phone": "+256 707 890 123",
-            "website": "https://mubendetransport.ug",
-            "image": "transport-logistics.jpg",
-            "membership": 3,
-            "tagline": "Reliable goods delivery across the Central Region.",
-            "email": "dispatch@mubendetransport.ug"
-        },
-        {
-            "name": "Mubende International School",
-            "address": "Plot 45, Teachers Avenue, Mubende",
-            "phone": "+256 708 901 234",
-            "website": "https://mubendeinternational.ug",
-            "image": "international-school.webp",
-            "membership": 2,
-            "tagline": "Excellence in education from kindergarten to high school.",
-            "email": "admissions@mubendeinternational.ug"
-        },
-        {
-            "name": "Shekinah Beauty & Wellness Spa",
-            "address": "Suite 5, Victoria Mall, Mubende",
-            "phone": "+256 709 012 345",
-            "website": "https://shekinahspa.ug",
-            "image": "shekinah-spa.webp",
-            "membership": 1,
-            "tagline": "Rejuvenate your mind, body, and spirit.",
-            "email": "spa@shekinah.ug"
-        }
-    ]
-    </script>
 </head>
+
 <body>
     <a class="skip-link" href="#members-container">Skip to main content</a>
+
+    <!-- ====== HEADER ====== -->
     <header>
         <div class="header-content">
-            <img src="images/Mubende chamber of commerce.png" alt="Mubende Chamber Logo" class="logo" width="60" height="60">
+            <img src="images/Mubende%20chamber%20of%20commerce.png" alt="Mubende Chamber of Commerce Logo – Supporting local business" class="logo" width="60" height="60" loading="lazy">
             <h1>MUBENDE CHAMBER OF COMMERCE</h1>
         </div>
         <nav aria-label="Primary navigation">
-            <button id="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">☰</button>
+            <button id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="hamburger-icon">☰</span>
+            </button>
             <ul id="primary-nav">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="directory.html" aria-current="page">Directory</a></li>
-                <li><a href="../index.html#discover">Discover</a></li>
-                <li><a href="../index.html#join">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- ====== MAIN ====== -->
     <main id="main-content" role="main">
         <section class="directory-controls" aria-labelledby="directory-heading">
             <h2 id="directory-heading">Member Directory</h2>
             <div class="view-toggle" role="group" aria-label="Select directory view">
-                <button id="grid-view" class="active" type="button" aria-label="Grid view">▦</button>
-                <button id="list-view" type="button" aria-label="List view">☰</button>
+                <button id="grid-view" class="active" type="button" aria-label="Display members as a grid">▦</button>
+                <button id="list-view" type="button" aria-label="Display members as a list">☰</button>
             </div>
         </section>
 
-        <section id="members-container" class="grid-view" aria-labelledby="directory-heading" aria-live="polite"></section>
+        <section id="members-container" class="grid-view" aria-labelledby="directory-heading" aria-live="polite">
+            <!-- Members rendered by JavaScript -->
+        </section>
+
         <noscript>
-            <p class="no-js-warning">JavaScript is required for the site controls. The directory content is still available.</p>
+            <p class="no-js-warning">JavaScript is required for the directory controls. The member list is still available.</p>
         </noscript>
     </main>
 
+    <!-- ====== FOOTER ====== -->
     <footer>
         <div class="footer-content">
             <div class="contact-info">
                 <p><strong>Mubende Chamber of Commerce</strong></p>
                 <p>Plot 5, Main Street, Mubende, Uganda</p>
-                <p>📞 +256 743769483</p>
-                <p>📧 info@mubendechamber.org</p>
+                <p>📞 <a href="tel:+256743769483">+256 743 769 483</a></p>
+                <p>📧 <a href="mailto:info@mubendechamber.org">info@mubendechamber.org</a></p>
             </div>
 
             <div class="social-media" aria-label="Social media links">
-                <a href="https://facebook.com/kabandaronaldofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <a href="https://facebook.com/kabandaronaldofficial" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
                         <path fill="currentColor" d="M22 12.07C22 6.49 17.52 2 12 2S2 6.49 2 12.07c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.84c0-2.52 1.5-3.9 3.79-3.9 1.1 0 2.24.2 2.24.2v2.47h-1.27c-1.25 0-1.64.78-1.64 1.58v1.9h2.8l-.45 2.9h-2.35v7.03C18.34 21.25 22 17.09 22 12.07Z"/>
                     </svg>
                 </a>
-                <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
                         <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69a4.25 4.25 0 0 0 1.86-2.35 8.48 8.48 0 0 1-2.7 1.03A4.23 4.23 0 0 0 16.11 4c-2.34 0-4.24 1.9-4.24 4.25 0 .33.04.66.11.97-3.52-.18-6.65-1.86-8.75-4.44a4.22 4.22 0 0 0-.57 2.14c0 1.48.75 2.79 1.9 3.56a4.2 4.2 0 0 1-1.92-.53v.05c0 2.06 1.47 3.79 3.43 4.18a4.26 4.26 0 0 1-1.91.07 4.24 4.24 0 0 0 3.96 2.95A8.47 8.47 0 0 1 2 19.54a11.97 11.97 0 0 0 6.48 1.9c7.78 0 12.04-6.45 12.04-12.04 0-.18-.01-.35-.02-.53A8.6 8.6 0 0 0 22.46 6Z"/>
                     </svg>
                 </a>
-                <a href="https://instagram.com/kabanda.ronald.10" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <a href="https://instagram.com/kabanda.ronald.10" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
                         <path fill="currentColor" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7Zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10Zm-5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm4.5-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"/>
                     </svg>
                 </a>

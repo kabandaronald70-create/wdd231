@@ -1,18 +1,32 @@
-/* ----- Small View (base) ----- */
+/* ====== SMALL.CSS – Base (Mobile-First) ====== */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Utility: Visually hidden but available to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: #F4F6F9;
     color: #2C3E50;
     line-height: 1.6;
-    visibility: visible;
 }
 
+/* ====== Skip Link ====== */
 .skip-link {
     position: absolute;
     top: -40px;
@@ -23,11 +37,11 @@ body {
     z-index: 1000;
     transition: top 0.2s ease;
 }
-
 .skip-link:focus {
     top: 0;
 }
 
+/* ====== No JS Warning ====== */
 .no-js-warning {
     background: #FFF3CD;
     border: 1px solid #FFEEBA;
@@ -37,6 +51,7 @@ body {
     margin-top: 1rem;
 }
 
+/* ====== HEADER ====== */
 header {
     background-color: #1B3A4B;
     color: #fff;
@@ -45,7 +60,6 @@ header {
     flex-direction: column;
     align-items: stretch;
 }
-
 .header-content {
     display: flex;
     align-items: center;
@@ -53,17 +67,17 @@ header {
     width: 100%;
     gap: 1rem;
 }
-
 .logo {
     width: 60px;
     height: auto;
 }
-
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 0;
+    letter-spacing: 0.5px;
 }
 
+/* ====== NAVIGATION ====== */
 nav {
     width: 100%;
     margin-top: 0.5rem;
@@ -80,8 +94,12 @@ nav {
     cursor: pointer;
     display: block;
     margin-left: auto;
+    border-radius: 4px;
+    transition: background 0.3s;
 }
-
+#menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
 #menu-toggle:focus-visible,
 .view-toggle button:focus-visible,
 .member-card .details a:focus-visible {
@@ -96,8 +114,8 @@ nav {
     align-items: flex-end;
     gap: 0.5rem;
     padding: 0.5rem 0;
+    width: 100%;
 }
-
 #primary-nav.open {
     display: flex;
 }
@@ -107,14 +125,18 @@ nav {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
+    font-weight: 500;
 }
-
-#primary-nav a:hover,
+#primary-nav a:hover {
+    background-color: rgba(230, 126, 34, 0.8);
+}
 #primary-nav .active a {
     background-color: #E67E22;
+    color: #fff;
 }
 
+/* ====== MAIN ====== */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -126,19 +148,19 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 0.75rem;
     margin-bottom: 1.5rem;
 }
-
 .directory-controls h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #1B3A4B;
+    margin: 0;
 }
 
 .view-toggle {
     display: flex;
     gap: 0.5rem;
 }
-
 .view-toggle button {
     background: #fff;
     border: 1px solid #ccc;
@@ -146,43 +168,45 @@ main {
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 4px;
-    transition: background 0.3s, border-color 0.3s;
+    transition: background 0.3s, border-color 0.3s, color 0.3s;
 }
-
 .view-toggle button.active {
     background: #1B3A4B;
     color: #fff;
     border-color: #1B3A4B;
 }
+.view-toggle button:hover:not(.active) {
+    background: #e9ecef;
+}
 
-/* ---- Grid View (default) ---- */
+/* ====== MEMBERS CONTAINER ====== */
 #members-container.grid-view {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-/* ---- List View ---- */
 #members-container.list-view {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
 
+/* ====== MEMBER CARD ====== */
 .member-card {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 .member-card:hover {
     transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .member-card img {
@@ -192,46 +216,42 @@ main {
     border-radius: 50%;
     background: #f0f0f0;
     margin-bottom: 0.75rem;
+    border: 2px solid #e9ecef;
 }
-
 .member-card-content {
     width: 100%;
 }
-
 .member-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #1B3A4B;
     margin-bottom: 0.25rem;
 }
-
 .member-card .tagline {
     font-style: italic;
     color: #666;
     font-size: 0.9rem;
 }
-
 .member-card .details {
     font-size: 0.95rem;
     margin-top: 0.75rem;
     display: grid;
     gap: 0.35rem;
 }
-
 .member-card .details p {
     margin: 0;
 }
-
 .member-card .details a {
     color: #E67E22;
     text-decoration: none;
+    word-break: break-all;
 }
-
 .member-card .details a:hover,
 .member-card .details a:focus-visible {
     text-decoration: underline;
 }
 
-.member-card .membership {
+/* ====== MEMBERSHIP BADGE ====== */
+.membership {
     display: inline-block;
     margin-top: 0.75rem;
     padding: 0.25rem 0.85rem;
@@ -239,39 +259,105 @@ main {
     font-size: 0.75rem;
     font-weight: 600;
     color: #fff;
+    letter-spacing: 0.3px;
+}
+.membership-1 {
+    background-color: #95A5A6;
+}
+.membership-2 {
+    background-color: #BDC3C7;
+    color: #2C3E50;
+}
+.membership-3 {
+    background-color: #F1C40F;
+    color: #2C3E50;
 }
 
-.membership-1 { background-color: #95A5A6; }
-.membership-2 { background-color: #BDC3C7; color: #2C3E50; }
-.membership-3 { background-color: #F1C40F; color: #2C3E50; }
-
-/* ---- List View specific ---- */
+/* ---- LIST VIEW: Stacked vertical layout with zebra striping ---- */
 #members-container.list-view .member-card {
-    flex-direction: row;
-    text-align: left;
-    gap: 1rem;
-    align-items: center;
+    display: block;
     padding: 0.75rem 1rem;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
 }
 
+/* Zebra striping */
+#members-container.list-view .member-card:nth-child(odd) {
+    background: #f8f9fa;
+}
+
+/* Hide images in list view */
 #members-container.list-view .member-card img {
-    width: 50px;
-    height: 50px;
-    flex-shrink: 0;
+    display: none;
 }
 
+/* Reset inner wrapper */
+#members-container.list-view .member-card .member-card-content {
+    display: block;
+}
+
+/* Name */
+#members-container.list-view .member-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1B3A4B;
+    margin: 0 0 0.2rem 0;
+}
+
+/* Show Tagline in list view */
+#members-container.list-view .member-card .tagline {
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #666;
+    margin: 0 0 0.3rem 0;
+}
+
+/* Details container */
 #members-container.list-view .member-card .details {
-    margin-top: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-/* Footer */
+/* Each detail line - block layout */
+#members-container.list-view .member-card .details p {
+    display: block;
+    margin: 0.1rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #2C3E50;
+}
+
+/* HIDE labels VISUALLY, but keep them for Screen Readers */
+#members-container.list-view .member-card .details p strong {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
+/* Membership badge */
+#members-container.list-view .member-card .membership {
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding: 0.15rem 0.6rem;
+    font-size: 0.7rem;
+    border-radius: 12px;
+}
+/* ====== FOOTER ====== */
 footer {
     background-color: #1B3A4B;
     color: #fff;
     padding: 1.5rem 1rem;
     margin-top: 2rem;
 }
-
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -281,71 +367,29 @@ footer {
     text-align: center;
     align-items: center;
 }
-
 .footer-content a {
     color: #E67E22;
 }
-
-.contact-info,
-.developer-info {
-    width: 100%;
-}
-
 .contact-info p,
 .developer-info p {
     margin-bottom: 0.4rem;
 }
-
-/* ----- Large View (≥ 32rem / 512px) ----- */
-@media only screen and (min-width: 32rem) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
-    #primary-nav {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 1.5rem;
-        margin-left: auto;
-    }
-
-    #members-container.grid-view {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    .social-media {
-        justify-content: flex-start;
-    }
+.contact-info a,
+.developer-info a {
+    color: #E67E22;
+    text-decoration: none;
+}
+.contact-info a:hover,
+.developer-info a:hover {
+    text-decoration: underline;
 }
 
-/* ----- Larger screens (≥ 60rem / 960px) ----- */
-@media only screen and (min-width: 60rem) {
-    #members-container.grid-view {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* ---- Social Media Icons ---- */
 .social-media {
     display: flex;
-    gap: 1rem;
-    justify-content: center;  
-    margin-top: 0.75rem;
+    gap: 0.75rem;
+    justify-content: center;
+    margin: 0.5rem 0;
 }
-
 .social-media a {
     display: inline-flex;
     align-items: center;
@@ -355,13 +399,44 @@ footer {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: #E67E22;
-    font-size: 1.2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
-
 .social-media a:hover {
     background-color: #fff;
     color: #1B3A4B;
     transform: scale(1.1);
+}
+.social-media svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* ====== ERROR / LOADING ====== */
+.error-message {
+    color: #c0392b;
+    background: #fde8e8;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ----- List view mobile: ensure no horizontal scroll ----- */
+@media (max-width: 600px) {
+    #members-container.list-view .member-card {
+        padding: 0.6rem 0.8rem;
+    }
+    
+    #members-container.list-view .member-card h3 {
+        font-size: 1rem;
+    }
+    
+    #members-container.list-view .member-card .details p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ----- Prevent layout shift while JS loads ----- */
+#members-container {
+    min-height: 400px;
 }

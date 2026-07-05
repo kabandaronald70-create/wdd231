@@ -64,27 +64,17 @@
         "address": "Plot 15, Station Road, Mubende",
         "phone": "+256 707 890 123",
         "website": "https://mubendetransport.ug",
-        "image": "transport-logistics.jpg",
+        "image": "transport-logistics.webp",
         "membership": 3,
         "tagline": "Reliable goods delivery across the Central Region.",
         "email": "dispatch@mubendetransport.ug"
-    },
-    {
-        "name": "Mubende International School",
-        "address": "Plot 45, Teachers Avenue, Mubende",
-        "phone": "+256 708 901 234",
-        "website": "https://mubendeinternational.ug",
-        "image": "international-school.webp",
-        "membership": 2,
-        "tagline": "Excellence in education from kindergarten to high school.",
-        "email": "admissions@mubendeinternational.ug"
     },
     {
         "name": "Shekinah Beauty & Wellness Spa",
         "address": "Suite 5, Victoria Mall, Mubende",
         "phone": "+256 709 012 345",
         "website": "https://shekinahspa.ug",
-        "image": "shekinah-spa.webp",
+        "image": "shekinah.webp",
         "membership": 1,
         "tagline": "Rejuvenate your mind, body, and spirit.",
         "email": "spa@shekinah.ug"
