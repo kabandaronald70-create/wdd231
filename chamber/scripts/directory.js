@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${imagePath}" alt="${member.name} logo" width="80" height="80" loading="lazy" decoding="async"
                          onerror="this.onerror=null; this.src='images/placeholder.webp';">
                     <div class="member-card-content">
-                        <h3>${member.name}</h3>
+                        <h2>${member.name}</h2>
                         <p class="tagline">${member.tagline || ''}</p>
                         <div class="details">
                             <p><strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a></p>

@@ -136,10 +136,10 @@ nav {
     font-weight: 500;
 }
 #primary-nav a:hover {
-    background-color: rgba(230, 126, 34, 0.8);
+    background-color: #B85C1F; 
 }
 #primary-nav .active a {
-    background-color: #E67E22;
+    background-color: #B85C1F; 
     color: #fff;
 }
 
@@ -178,8 +178,8 @@ main {
 .view-toggle button {
     background: #fff;
     border: 1px solid #ccc;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    padding: 0.75rem 1.2rem; 
+    font-size: 1.5rem;    
     cursor: pointer;
     border-radius: 4px;
     transition: background 0.3s, border-color 0.3s, color 0.3s;
@@ -275,16 +275,18 @@ main {
     color: #fff;
     letter-spacing: 0.3px;
 }
-.membership-1 {
-    background-color: #95A5A6;
+
+.membership-1 { 
+    background-color: #6C7A7D; 
+    color: #fff; 
 }
-.membership-2 {
-    background-color: #BDC3C7;
-    color: #2C3E50;
+.membership-2 { 
+    background-color: #BDC3C7; 
+    color: #000000; 
 }
-.membership-3 {
-    background-color: #F1C40F;
-    color: #2C3E50;
+.membership-3 { 
+    background-color: #F1C40F; 
+    color: #000000; 
 }
 
 /* ---- LIST VIEW: Stacked vertical layout with zebra striping ---- */
@@ -366,8 +368,9 @@ main {
     border-radius: 12px;
 }
 /* ====== FOOTER ====== */
+
 footer {
-    background-color: #1B3A4B;
+    background-color: #0D2A38; 
     color: #fff;
     padding: 1.5rem 1rem;
     margin-top: 2rem;
