@@ -16,18 +16,19 @@
     <meta property="og:locale" content="en_US">
     <meta name="theme-color" content="#1B3A4B">
 
+
     <!-- ====== Favicon ====== -->
     <link rel="icon" href="images/favicon_io.ico">
     <link rel="apple-touch-icon" href="images/favicon_io.ico">
     <link rel="canonical" href="https://kabandaronald70-create.github.io/wdd231/chamber/directory.html">
     <meta name="robots" content="index, follow">
 
-  <!-- ====== GOOGLE FONTS (Optimized with preconnect) ====== -->
+    <!-- ====== GOOGLE FONTS (Optimized with preconnect) ====== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
 
-       <!-- ====== OPTIMIZED CSS LOADING (Non-render-blocking) ====== -->
+    <!-- ====== OPTIMIZED CSS LOADING (Non-render-blocking) ====== -->
 
     <!-- Normalize.css (Critical - loads early) -->
     <link rel="preload" as="style" href="styles/normalize.css" onload="this.onload=null;this.rel='stylesheet'">
@@ -45,25 +46,26 @@
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
-    <!-- ====== Preload critical assets ====== -->
+    <!-- ====== Preload critical image ====== -->
     <link rel="preload" href="images/mubende-logo.png" as="image">
 
-    <!-- ====== JavaScript ====== -->
+    <!-- ====== JavaScript (Deferred to not block rendering) ====== -->
     <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
+    <!-- ====== SKIP LINK (Accessibility) ====== -->
     <a class="skip-link" href="#members-container">Skip to main content</a>
 
     <!-- ====== HEADER ====== -->
     <header>
         <div class="header-content">
-            <img src="images/mubende-logo.png" alt="Mubende Chamber of Commerce Logo – Supporting local business" class="logo" width="60" height="60" loading="lazy">
-           <div class="site-title">MUBENDE CHAMBER OF COMMERCE</div>
+            <img src="images/mubende-logo.png" alt="Mubende Chamber of Commerce Logo – Supporting local business" class="logo" width="60" height="60" loading="lazy" decoding="async">
+            <div class="site-title">MUBENDE CHAMBER OF COMMERCE</div>
         </div>
         <nav aria-label="Primary navigation">
             <button id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
-                <span class="hamburger-icon">☰</span>
+                <span class="hamburger-icon" aria-hidden="true">☰</span>
             </button>
             <ul id="primary-nav">
                 <li><a href="index.html">Home</a></li>
@@ -104,16 +106,16 @@
             </div>
 
             <div class="social-media" role="group" aria-label="Social media links">
-    <a href="https://facebook.com/kabandaronaldofficial" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-        <i class="fab fa-facebook" aria-hidden="true"></i>
-    </a>
-    <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-        <i class="fab fa-x-twitter" aria-hidden="true"></i>
-    </a>
-    <a href="https://instagram.com/kabanda.ronald.10" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-        <i class="fab fa-instagram" aria-hidden="true"></i>
-    </a>
-</div>
+                <a href="https://facebook.com/kabandaronaldofficial" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/kabanda.ronald.10" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
 
             <div class="developer-info">
                 <p>&copy; <span id="year"></span> Mubende Chamber of Commerce</p>
