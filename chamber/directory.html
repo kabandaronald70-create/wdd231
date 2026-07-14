@@ -22,17 +22,28 @@
     <link rel="canonical" href="https://kabandaronald70-create.github.io/wdd231/chamber/directory.html">
     <meta name="robots" content="index, follow">
 
-    <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
-<!-- Font Awesome for social media icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- ====== GOOGLE FONTS (Optimized with preconnect) ====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
 
-    <!-- ====== CSS (order matters: normalize → small → larger) ====== -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+       <!-- ====== OPTIMIZED CSS LOADING (Non-render-blocking) ====== -->
+
+    <!-- Normalize.css (Critical - loads early) -->
+    <link rel="preload" as="style" href="styles/normalize.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
+
+    <!-- small.css (Critical for mobile) -->
+    <link rel="preload" as="style" href="styles/small.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/small.css"></noscript>
+
+    <!-- large.css (Desktop only - loads after page render) -->
+    <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles/large.css"></noscript>
+
+    <!-- Font Awesome (Icons - loads after page render) -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
     <!-- ====== Preload critical assets ====== -->
     <link rel="preload" href="images/mubende-logo.png" as="image">

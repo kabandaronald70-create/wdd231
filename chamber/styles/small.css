@@ -7,6 +7,26 @@
     padding: 0;
 }
 
+/* ----- Strong Focus Outline for Accessibility ----- */
+*:focus-visible {
+    outline: 3px solid #1B3A4B;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Specific fix for the hamburger menu */
+#menu-toggle:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+    border-color: #ffffff;
+}
+
+/* Specific fix for social media icons */
+.social-media a:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background: #f8f9fa;
@@ -30,6 +50,10 @@ body {
 }
 .skip-link:focus {
     top: 0;
+    background: #1B3A4B;
+    color: #ffffff;                /* ✅ Ensure it's pure white */
+    outline: 3px solid #ffffff;    /* ✅ Add a white outline for visibility */
+    outline-offset: 2px;
 }
 
 /* ----- Header ----- */
@@ -186,13 +210,13 @@ main {
 
 .view-toggle button {
     background: #e9ecef;
-    border: 2px solid transparent;
+    border: 2px solid #adb5bd;
     border-radius: 6px;
     padding: 0.4rem 0.9rem;
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.2s;
-    color: #495057;
+    color: #212529;
     line-height: 1;
 }
 
@@ -202,7 +226,7 @@ main {
 
 .view-toggle button.active {
     background: #1B3A4B;
-    color: #fff;
+     color: #ffffff;
     border-color: #1B3A4B;
 }
 
