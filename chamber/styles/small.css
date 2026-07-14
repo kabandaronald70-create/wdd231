@@ -168,13 +168,13 @@ header {
 }
 
 #primary-nav a:hover {
-    background: rgba(255, 255, 255, 0.12);
-    color: white;
+    background: #3D5A6B;  /* Solid dark color, passes contrast with white text */
+    color: #ffffff;
 }
 
 #primary-nav .active a {
-    background: rgba(236, 217, 217, 0.18);
-    color: white;
+    background: #4A6A7D;  /* Slightly lighter dark for active state, still passes contrast */
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -435,14 +435,14 @@ footer {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
+      background: #2D4A5A;
     text-decoration: none;
 }
 
 .social-media a:hover {
     color:white;
     transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.15);
+    background: #3D5A6B;
 }
 
 .social-media a:focus-visible {

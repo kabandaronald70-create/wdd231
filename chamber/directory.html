@@ -16,6 +16,28 @@
     <meta property="og:locale" content="en_US">
     <meta name="theme-color" content="#1B3A4B">
 
+    <!-- ====== JSON-LD Structured Data ====== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Mubende Chamber of Commerce",
+        "url": "https://kabandaronald70-create.github.io/wdd231/chamber/directory.html",
+        "logo": "https://kabandaronald70-create.github.io/wdd231/chamber/images/mubende-logo.png",
+        "sameAs": [
+            "https://facebook.com/kabandaronaldofficial",
+            "https://twitter.com/KABANDARONALD13",
+            "https://instagram.com/kabanda.ronald.10"
+        ],
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "telephone": "+256743769483",
+            "email": "info@mubendechamber.org",
+            "areaServed": "UG"
+        }]
+    }
+    </script>
 
     <!-- ====== Favicon ====== -->
     <link rel="icon" href="images/favicon_io.ico">
@@ -23,36 +45,25 @@
     <link rel="canonical" href="https://kabandaronald70-create.github.io/wdd231/chamber/directory.html">
     <meta name="robots" content="index, follow">
 
-    <!-- ====== GOOGLE FONTS (Optimized with preconnect) ====== -->
+    <!-- ====== GOOGLE FONTS ====== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
 
-    <!-- ====== OPTIMIZED CSS LOADING (Non-render-blocking) ====== -->
-
-    <!-- Normalize.css (Critical - loads early) -->
-    <link rel="preload" as="style" href="styles/normalize.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
-
-    <!-- small.css (Critical for mobile) -->
-    <link rel="preload" as="style" href="styles/small.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/small.css"></noscript>
-
-    <!-- large.css (Desktop only - loads after page render) -->
+    <!-- ====== CSS (Optimized - passes validator) ====== -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="styles/large.css"></noscript>
-
-    <!-- Font Awesome (Icons - loads after page render) -->
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
-    <!-- ====== Preload critical image ====== -->
+    <!-- ====== Preload critical assets ====== -->
     <link rel="preload" href="images/mubende-logo.png" as="image">
 
-    <!-- ====== JavaScript (Deferred to not block rendering) ====== -->
+    <!-- ====== JavaScript ====== -->
     <script src="scripts/directory.js" defer></script>
 </head>
-
 <body>
     <!-- ====== SKIP LINK (Accessibility) ====== -->
     <a class="skip-link" href="#members-container">Skip to main content</a>
