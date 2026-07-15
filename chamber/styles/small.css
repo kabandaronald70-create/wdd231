@@ -470,3 +470,10 @@ footer {
 .developer-info p {
     margin: 0.15rem 0;
 }
+
+/* ----- Tablet Font Size Override (in small.css) ----- */
+@media only screen and (min-width: 32rem) {
+    .site-title {
+        font-size: 0.8rem;
+    }
+}

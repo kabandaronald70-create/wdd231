@@ -2,9 +2,6 @@
 
 /* ----- Tablet: ≥ 512px (32rem) ----- */
 @media only screen and (min-width: 32rem) {
-.site-title {
-        font-size: 0.8rem;
-    }
     /* Header */
     header {
         flex-direction: row;
