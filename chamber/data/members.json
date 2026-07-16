@@ -4,7 +4,7 @@
         "address": "Plot 12, Kampala Road, Mubende",
         "phone": "+256 772 345 678",
         "website": "https://mubendehardware.ug",
-        "image": "hardware-supplies.jpg",
+        "image": "hardware-supplies.webp",
         "membership": 3,
         "tagline": "Your one-stop shop for building materials.",
         "email": "info@mubendehardware.ug"
@@ -14,7 +14,7 @@
         "address": "Plot 8, Hospital Road, Mubende",
         "phone": "+256 789 012 345",
         "website": "https://mubendeclinic.ug",
-        "image": "medical-clinic.jpg",
+        "image": "medical-clinic.webp",
         "membership": 2,
         "tagline": "Caring for the community since 2005.",
         "email": "admin@mubendeclinic.ug"

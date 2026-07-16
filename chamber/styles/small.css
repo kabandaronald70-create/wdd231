@@ -496,7 +496,7 @@ footer {
 
 .hero {
     position: relative;
-    min-height: 400px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -505,7 +505,7 @@ footer {
     margin-bottom: 2rem;
     border-radius: 12px;
     overflow: hidden;
-    /* Fallback background color (gradient) */
+   
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
 }
 
