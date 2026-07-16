@@ -8,9 +8,9 @@
     --primary-lighter: #4A6A7D;
     --text: #101011;
     --text-light: #ffffff;
-    --gray-bg: #f8f9fa;
-    --gray-border: #e9ecef;
-    --gray-text: #6c757d;
+    --gray-bg: #eef2f5;
+    --gray-border: #cbd5e1;
+    --gray-text: #334155;
     --gold: #ffd700;
     --silver: #c0c0c0;
     --bronze: #cd7f32;
@@ -286,7 +286,7 @@ main {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    background: #f1f3f5;
+    background: #eef2f5;
     border: 3px solid var(--gray-border);
     flex-shrink: 0;
 }
@@ -404,9 +404,9 @@ main {
 /* ----- Error / Loading States ----- */
 .error-message,
 .no-js-warning {
-    background: #fff3cd;
-    border: 1px solid #ffc107;
-    color: #533f03;
+    background: #fff4c2;
+    border: 1px solid #b8860b;
+    color: #4d3b00;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -838,7 +838,7 @@ footer {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    background: #f1f3f5;
+    background: #eef2f5;
     border: 3px solid var(--gray-border);
     margin-bottom: 0.5rem;
 }
@@ -859,14 +859,14 @@ footer {
 }
 
 .spotlight-card .spotlight-details a {
-    color: #0066CC;;
+    color: #0056b3;
     text-decoration: none;
     word-break: break-all;
 }
 
 .spotlight-card .spotlight-details a:hover {
     text-decoration: underline;
-    color: #5b0bee; /* Sky blue */
+    color: #003d80;
 }
 
 .spotlight-card .membership-badge {
@@ -917,5 +917,5 @@ footer {
 }
 
 .cta-section .cta-button:hover {
-    background: #e6c200;
+    background: #c99700;
 }
