@@ -15,22 +15,5 @@
             "date": "October 10-12, 2026",
             "description": "Showcase your business to the community. Booths available for chamber members at a discounted rate."
         }
-    ],
-    "spotlights": [
-        {
-            "name": "Mubende Hardware & Supplies",
-            "tagline": "Your one-stop shop for building materials.",
-            "membership": 3
-        },
-        {
-            "name": "Riverside Hotel & Restaurants",
-            "tagline": "Luxury accommodation and fine dining.",
-            "membership": 3
-        },
-        {
-            "name": "Mubende Central Medical Clinic",
-            "tagline": "Caring for the community since 2005.",
-            "membership": 2
-        }
     ]
 }

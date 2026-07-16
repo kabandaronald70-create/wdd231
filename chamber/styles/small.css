@@ -6,7 +6,7 @@
     --primary-dark: #2D4A5A;
     --primary-light: #3D5A6B;
     --primary-lighter: #4A6A7D;
-    --text: #1a1a2e;
+    --text: #101011;
     --text-light: #ffffff;
     --gray-bg: #f8f9fa;
     --gray-border: #e9ecef;
@@ -716,7 +716,11 @@ footer {
 
 .weather-icon img {
     display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
     background: transparent;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.12));
 }
 
 .weather-temp {
@@ -757,6 +761,54 @@ footer {
     margin: 0;
 }
 
+/* ----- 3‑Day Forecast ----- */
+.weather-forecast {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray-border);
+    width: 100%;
+}
+
+.forecast-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gray-bg);
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    min-width: 60px;
+    flex: 1 1 0;
+    max-width: 100px;
+}
+
+.forecast-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.forecast-temp {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
 /* ----- Spotlight Section ----- */
 .spotlight {
     margin-bottom: 2rem;
@@ -778,6 +830,54 @@ footer {
     border-radius: 8px;
     padding: 1.25rem;
     text-align: center;
+}
+
+/* ----- Spotlight Card (enhanced) ----- */
+.spotlight-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f1f3f5;
+    border: 3px solid var(--gray-border);
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card .spotlight-details {
+    font-size: 0.85rem;
+    text-align: left;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: var(--gray-bg);
+    border-radius: 6px;
+}
+
+.spotlight-card .spotlight-details p {
+    margin: 0.2rem 0;
+    word-break: break-word;
+}
+
+.spotlight-card .spotlight-details a {
+    color: #0066CC;;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.spotlight-card .spotlight-details a:hover {
+    text-decoration: underline;
+    color: #5b0bee; /* Sky blue */
+}
+
+.spotlight-card .membership-badge {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.4rem;
 }
 
 .spotlight-card h3 {

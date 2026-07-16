@@ -17,27 +17,7 @@
     <meta name="theme-color" content="#1B3A4B" />
 
     <!-- ====== JSON-LD Structured Data ====== -->
-    <script type="application/ld+json" data-ignore="true">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Mubende Chamber of Commerce",
-        "url": "https://kabandaronald70-create.github.io/wdd231/chamber/index.html",
-        "logo": "https://kabandaronald70-create.github.io/wdd231/chamber/images/mubende-logo.png",
-        "sameAs": [
-            "https://facebook.com/kabandaronaldofficial",
-            "https://twitter.com/KABANDARONALD13",
-            "https://instagram.com/kabanda.ronald.10"
-        ],
-        "contactPoint": [{
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "telephone": "+256743769483",
-            "email": "info@mubendechamber.org",
-            "areaServed": "UG"
-        }]
-    }
-    </script>
+    <script src="scripts/structured-data.js" data-schema-page="home"></script>
 
     <!-- ====== Favicon ====== -->
     <link rel="icon" href="images/favicon_io.ico" />
@@ -54,8 +34,8 @@
     <link rel="preload" as="style" href="styles/normalize.css" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="styles/normalize.css" /></noscript>
 
-    <link rel="preload" as="style" href="styles/small.css" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="styles/small.css" /></noscript>
+    <link rel="preload" as="style" href="styles/small.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles/small.min.css" /></noscript>
 
     <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="styles/large.css" /></noscript>
@@ -97,7 +77,8 @@
     <main id="main-content" role="main">
 
              <!-- ====== HERO SECTION (Image set in HTML) ====== -->
-        <section class="hero" aria-labelledby="hero-heading" style="--hero-image: url('images/hero-banner.webp');">
+        <section class="hero" aria-labelledby="hero-heading">
+            
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1 id="hero-heading">Welcome to Mubende Chamber of Commerce</h1>

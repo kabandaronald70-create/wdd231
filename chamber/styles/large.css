@@ -265,6 +265,18 @@
         flex-direction: row;
         gap: 1.5rem;
     }
+
+    .weather-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+}
+.weather-forecast {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+}
 }
 
 /* ----- Desktop: ≥ 960px ----- */
