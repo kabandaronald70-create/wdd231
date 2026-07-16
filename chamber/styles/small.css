@@ -543,21 +543,6 @@ footer {
     color: var(--text-light);
 }
 
-.hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-light);
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 1.5rem;
-    opacity: 0.95;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-}
-
 .hero-content .cta-button {
     display: inline-block;
     background: var(--gold);
