@@ -226,3 +226,71 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* ====== HOMEPAGE LAYOUT (Tablet & Desktop) ====== */
+
+/* ----- Tablet: ≥ 512px ----- */
+@media only screen and (min-width: 32rem) {
+    .hero {
+        padding: 4rem 2rem;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather-display {
+        flex-direction: row;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+
+    .weather-temp .temp {
+        font-size: 3.5rem;
+    }
+
+    .weather-details {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
+
+/* ----- Desktop: ≥ 960px ----- */
+@media only screen and (min-width: 60rem) {
+    .hero {
+        padding: 5rem 3rem;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+     .weather-display {
+        gap: 4rem;
+    }
+
+    .weather-temp .temp {
+        font-size: 4rem;
+    }
+}

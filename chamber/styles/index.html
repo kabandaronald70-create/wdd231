@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mubende Chamber of Commerce – Home</title>
+    <meta name="description" content="Mubende Chamber of Commerce – Supporting local businesses in Mubende Municipality. Join us to grow your business." />
+    <meta name="author" content="Ronald Kabanda" />
+
+    <!-- ====== Facebook Open Graph ====== -->
+    <meta property="og:title" content="Mubende Chamber of Commerce – Home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://kabandaronald70-create.github.io/wdd231/chamber/images/og-image-1.png" />
+    <meta property="og:url" content="https://kabandaronald70-create.github.io/wdd231/chamber/index.html" />
+    <meta property="og:description" content="Supporting local businesses in Mubende Municipality. Join us to grow your business." />
+    <meta property="og:locale" content="en_US" />
+    <meta name="theme-color" content="#1B3A4B" />
+
+    <!-- ====== JSON-LD Structured Data ====== -->
+    <script type="application/ld+json" data-ignore="true">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Mubende Chamber of Commerce",
+        "url": "https://kabandaronald70-create.github.io/wdd231/chamber/index.html",
+        "logo": "https://kabandaronald70-create.github.io/wdd231/chamber/images/mubende-logo.png",
+        "sameAs": [
+            "https://facebook.com/kabandaronaldofficial",
+            "https://twitter.com/KABANDARONALD13",
+            "https://instagram.com/kabanda.ronald.10"
+        ],
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "telephone": "+256743769483",
+            "email": "info@mubendechamber.org",
+            "areaServed": "UG"
+        }]
+    }
+    </script>
+
+    <!-- ====== Favicon ====== -->
+    <link rel="icon" href="images/favicon_io.ico" />
+    <link rel="apple-touch-icon" href="images/favicon_io.ico" />
+    <link rel="canonical" href="https://kabandaronald70-create.github.io/wdd231/chamber/index.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ====== GOOGLE FONTS ====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <!-- ====== CSS (non-blocking) ====== -->
+    <link rel="preload" as="style" href="styles/normalize.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles/normalize.css" /></noscript>
+
+    <link rel="preload" as="style" href="styles/small.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles/small.css" /></noscript>
+
+    <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="styles/large.css" /></noscript>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /></noscript>
+
+    <!-- ====== Preload critical assets ====== -->
+    <link rel="preload" href="images/mubende-logo.png" as="image" />
+
+    <!-- ====== JavaScript ====== -->
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <!-- ====== SKIP LINK ====== -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <div class="header-content">
+            <img src="images/mubende-logo.png" alt="Mubende Chamber of Commerce Logo – Supporting local business" class="logo" width="60" height="60" loading="lazy" decoding="async" />
+            <div class="site-title">MUBENDE CHAMBER OF COMMERCE</div>
+        </div>
+        <nav aria-label="Primary navigation">
+            <button id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="hamburger-icon" aria-hidden="true">☰</span>
+            </button>
+            <ul id="primary-nav">
+                <li class="active"><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main id="main-content" role="main">
+
+        <!-- ====== HERO SECTION ====== -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h1 id="hero-heading">Welcome to Mubende Chamber of Commerce</h1>
+                <p>Connecting businesses, empowering growth, and building a stronger community in Mubende Municipality.</p>
+                <a href="join.html" class="cta-button">Join Us Today</a>
+            </div>
+        </section>
+
+        <!-- ====== ABOUT / MISSION SECTION ====== -->
+        <section class="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About the Chamber</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>The Mubende Chamber of Commerce is the voice of business in Mubende Municipality. We bring together local enterprises—from hardware suppliers and medical clinics to hotels and tech startups—to foster economic development, advocate for pro-business policies, and create networking opportunities.</p>
+                    <p>Our members enjoy exclusive benefits, including business promotion, access to training, and a strong community of like-minded entrepreneurs.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="member-count">0</span>
+                        <span class="stat-label">Members</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years of Service</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Community Events / Year</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== CURRENT EVENTS ====== -->
+        <section class="events" aria-labelledby="events-heading">
+            <h2 id="events-heading">Upcoming Events</h2>
+            <div class="events-container" id="events-container">
+                <!-- Events rendered by JavaScript -->
+            </div>
+        </section>
+
+        <!-- ====== WEATHER ====== -->
+        <section class="weather" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Mubende Weather</h2>
+            <div class="weather-card" id="weather-card">
+                <div class="weather-loading">Loading weather...</div>
+            </div>
+        </section>
+
+        <!-- ====== BUSINESS SPOTLIGHT ====== -->
+        <section class="spotlight" aria-labelledby="spotlight-heading">
+            <h2 id="spotlight-heading">Member Spotlight</h2>
+            <div class="spotlight-container" id="spotlight-container">
+                <!-- Spotlights rendered by JavaScript -->
+            </div>
+        </section>
+
+        <!-- ====== CALL TO ACTION ====== -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="cta-content">
+                <h2 id="cta-heading">Ready to Grow Your Business?</h2>
+                <p>Join the Mubende Chamber of Commerce today and connect with over 50 local businesses.</p>
+                <a href="join.html" class="cta-button">Become a Member</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Mubende Chamber of Commerce</strong></p>
+                <p>Plot 5, Main Street, Mubende, Uganda</p>
+                <p>📞 <a href="tel:+256743769483">+256 743 769 483</a></p>
+                <p>📧 <a href="mailto:info@mubendechamber.org">info@mubendechamber.org</a></p>
+            </div>
+
+            <div class="social-media" role="group" aria-label="Social media links">
+                <a href="https://facebook.com/kabandaronaldofficial" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/kabanda.ronald.10" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="developer-info">
+                <p>&copy; <span id="year"></span> Mubende Chamber of Commerce</p>
+                <p>WDD231 | Ronald Kabanda | Mubende, Uganda</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

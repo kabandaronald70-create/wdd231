@@ -1,0 +1,36 @@
+{
+    "events": [
+        {
+            "title": "Annual Business Networking Gala",
+            "date": "August 15, 2026",
+            "description": "Join us for an evening of networking, dinner, and awards celebrating Mubende's top businesses."
+        },
+        {
+            "title": "Small Business Training Workshop",
+            "date": "September 5, 2026",
+            "description": "Learn essential skills in digital marketing, financial management, and customer service."
+        },
+        {
+            "title": "Mubende Trade Fair 2026",
+            "date": "October 10-12, 2026",
+            "description": "Showcase your business to the community. Booths available for chamber members at a discounted rate."
+        }
+    ],
+    "spotlights": [
+        {
+            "name": "Mubende Hardware & Supplies",
+            "tagline": "Your one-stop shop for building materials.",
+            "membership": 3
+        },
+        {
+            "name": "Riverside Hotel & Restaurants",
+            "tagline": "Luxury accommodation and fine dining.",
+            "membership": 3
+        },
+        {
+            "name": "Mubende Central Medical Clinic",
+            "tagline": "Caring for the community since 2005.",
+            "membership": 2
+        }
+    ]
+}
