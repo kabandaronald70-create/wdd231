@@ -35,13 +35,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----- Load Home Data -----
     async function loadHomeData() {
         try {
-            const response = await fetch('data/home.json');
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            const data = await response.json();
+            // Fetch both home.json (events) and members.json (count)
+            const [homeResponse, membersResponse] = await Promise.all([
+                fetch('data/home.json'),
+                fetch('data/members.json')
+            ]);
+            
+            if (!homeResponse.ok) throw new Error(`Home data HTTP ${homeResponse.status}`);
+            const data = await homeResponse.json();
+            
+            let members = [];
+            if (membersResponse.ok) {
+                members = await membersResponse.json();
+            }
 
             requestAnimationFrame(() => {
                 renderEvents(data.events || []);
-                updateMemberCount([]);
+                updateMemberCount(members);
             });
         } catch (error) {
             console.error('Failed to load home data:', error);

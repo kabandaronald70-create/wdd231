@@ -1,6 +1,5 @@
 /* ====== SMALL.CSS – Mobile First (default) ====== */
 
-/* ----- CSS Variables (Consolidates all colors) ----- */
 :root {
     --primary: #1B3A4B;
     --primary-dark: #2D4A5A;
@@ -192,15 +191,22 @@ header {
     text-align: center;
 }
 
+/* ====== ACTIVE STATE (Yellow background + Black text) ====== */
+#primary-nav .active a {
+    background: #ffd700;        
+    color: #000000;           
+    font-weight: 600;
+}
+
+/* ====== ACTIVE HOVER (Keep it yellow/black when hovered) ====== */
 #primary-nav a:hover {
-    background: var(--primary-light);
+    background: var(--primary-lighter);
     color: var(--text-light);
 }
 
-#primary-nav .active a {
-    background: var(--primary-lighter);
-    color: var(--text-light);
-    font-weight: 600;
+#primary-nav .active a:hover {
+    background: var(--gold);        
+    color: var(--text);           
 }
 
 /* ----- Main Content ----- */
@@ -505,8 +511,7 @@ footer {
     margin-bottom: 2rem;
     border-radius: 12px;
     overflow: hidden;
-   
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+   background: var(--primary); 
 }
 
 /* ----- Hero Background Image (covers the entire section) ----- */
@@ -517,7 +522,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero-banner.webp');
+    background-image: url('../images/hero-baner-1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -531,7 +536,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(27, 58, 75, 0.65); /* Dark overlay (65% opacity) */
+    background: rgba(27, 58, 75, 0.65); 
     z-index: 2;
 }
 
@@ -569,6 +574,7 @@ footer {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     color: var(--text-light);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content p {
