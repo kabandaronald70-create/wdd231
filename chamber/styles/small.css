@@ -925,3 +925,439 @@ footer {
 .cta-section .cta-button:hover {
     background: #c99700;
 }
+
+/* ====== JOIN PAGE SPECIFIC STYLES ====== */
+
+/* ------ Layout ------ */
+.join-heading {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    
+}
+.join-subheading {
+    color: var(--gray-text);
+    margin-bottom: 2rem;
+}
+
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ------ Form ------ */
+.join-form-section {
+    flex: 1;
+}
+#membership-form {
+    background: var(--text-light);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+#membership-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--text);
+}
+#membership-form label span[aria-hidden="true"] {
+    color: #800;
+    margin-left: 0.2rem;
+}
+#membership-form input,
+#membership-form select,
+#membership-form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.25rem;
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+    font-size: 1rem;
+    background: var(--gray-bg);
+    transition: border-color 0.2s;
+}
+#membership-form input:focus,
+#membership-form select:focus,
+#membership-form textarea:focus {
+    border-color: var(--primary);
+    outline: 2px solid rgba(27,58,75,0.3);
+}
+#membership-form small {
+    display: block;
+    color: var(--gray-text);
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.submit-btn {
+    background: var(--primary);
+    color: var(--text-light);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    width: 100%;
+}
+.submit-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.02);
+}
+
+/* ------ Membership Cards (right side) ------ */
+.membership-cards {
+    flex: 1;
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background: var(--text-light);
+    border: 1px solid var(--gray-border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: transform 0.2s;
+    /* Animation on initial load – see keyframes below */
+    animation: cardAppear 0.6s ease forwards;
+    opacity: 0; /* start invisible */
+}
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes cardAppear {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+.card .fee {
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0.5rem 0;
+}
+.card .modal-trigger {
+    background: var(--primary);
+    color: var(--text-light);
+    border: none;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.card .modal-trigger:hover {
+    background: var(--primary-dark);
+}
+
+/* Color accents for each card */
+.np-card { border-top: 4px solid var(--gray-text); }
+.bronze-card { border-top: 4px solid var(--bronze); }
+.silver-card { border-top: 4px solid var(--silver); }
+.gold-card { border-top: 4px solid var(--gold); }
+
+/* ------ Modals (dialog) ------ */
+.membership-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    background: var(--text-light);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+.membership-modal::backdrop {
+    background: rgba(0,0,0,0.4);
+}
+.membership-modal h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+.membership-modal ul {
+    text-align: left;
+    padding-left: 1.2rem;
+}
+.membership-modal ul li {
+    margin: 0.5rem 0;
+}
+.modal-close {
+    background: var(--primary);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.modal-close:hover {
+    background: var(--primary-dark);
+}
+
+/* ------ Thank You Page ------ */
+.thankyou-section {
+    background: var(--text-light);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.thankyou-details {
+    text-align: left;
+    background: var(--gray-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+.thankyou-details ul {
+    list-style: none;
+    padding: 0;
+}
+.thankyou-details li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--gray-border);
+}
+.thankyou-details li:last-child {
+    border-bottom: none;
+}
+.thankyou-section .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* ------ Responsive (tablet and up) ------ */
+@media only screen and (min-width: 32rem) {
+    .join-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .join-form-section {
+        flex: 2;
+    }
+    .membership-cards {
+        flex: 1;
+        min-width: 260px;
+    }
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ------ Utility ------ */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* ====== DISCOVER.CSS – Dedicated Discover Page Styles ====== */
+
+/* ------ Header ------ */
+.discover-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.discover-header h1 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+.discover-header p {
+    color: var(--gray-text);
+    font-size: 1.1rem;
+}
+
+/* ------ Visit Message ------ */
+.visit-message {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+.visit-message p {
+    margin: 0;
+}
+
+/* ====== DISCOVER GRID – Named Grid Areas ====== */
+
+/* ----- SMALL SCREENS: 320px – 640px (single column) ----- */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    /* Define named areas for each card – all stacked vertically */
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+/* ----- MEDIUM SCREENS: 641px – 1024px (2×4 grid) ----- */
+@media only screen and (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+}
+
+/* ----- LARGE SCREENS: 1025px and above (3×3 layout with featured card) ----- */
+@media only screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "card1 card1 card2"
+            "card3 card4 card5"
+            "card6 card7 card8";
+    }
+
+    /* ----- Image Hover Effect (only on large screens) ----- */
+    .discover-card figure {
+        overflow: hidden;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .discover-card figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+    .discover-card figure:hover img {
+        transform: scale(1.08);
+        filter: brightness(1.1) saturate(1.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    .discover-card figure:hover {
+        box-shadow: 0 8px 25px rgba(27, 58, 75, 0.3);
+    }
+}
+
+/* ====== DISCOVER CARD STYLES ====== */
+.discover-card {
+    background: var(--text-light);
+    border: 1px solid var(--gray-border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: box-shadow 0.2s;
+}
+.discover-card:hover {
+    box-shadow: 0 4px 16px var(--shadow-dark);
+}
+
+.discover-card h2 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.discover-card figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--gray-bg);
+}
+.discover-card figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    background: var(--gray-bg);
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    padding: 0.25rem 0;
+}
+
+.discover-card p {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.discover-card .learn-more {
+    background: var(--primary);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    align-self: flex-start;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 0.5rem;
+}
+.discover-card .learn-more:hover {
+    background: var(--primary-dark);
+    transform: scale(1.04);
+}
+
+/* ====== VISUALLY HIDDEN (for accessibility) ====== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ====== EXTRA LARGE (optional refinement) ====== */
+@media only screen and (min-width: 1200px) {
+    .discover-grid {
+        gap: 2rem;
+    }
+    .discover-card {
+        padding: 1.5rem;
+    }
+}

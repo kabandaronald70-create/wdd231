@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mubende Chamber of Commerce – Join</title>
+    <meta name="description" content="Apply to join the Mubende Chamber of Commerce. Fill out the membership application form and become part of our business community." />
+    <meta name="author" content="Ronald Kabanda" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mubende Chamber of Commerce – Join" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://kabandaronald70-create.github.io/wdd231/chamber/images/og-image-1.png" />
+    <meta property="og:url" content="https://kabandaronald70-create.github.io/wdd231/chamber/join.html" />
+    <meta property="og:description" content="Apply to join the Mubende Chamber of Commerce today." />
+    <meta property="og:locale" content="en_US" />
+    <meta name="theme-color" content="#1B3A4B" />
+
+    <!-- JSON-LD Structured Data (handled by structured-data.js) -->
+    <script src="scripts/structured-data.js" data-schema-page="join" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon_io.ico" />
+    <link rel="apple-touch-icon" href="images/favicon_io.ico" />
+    <link rel="canonical" href="https://kabandaronald70-create.github.io/wdd231/chamber/join.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Google Fonts (only if used) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.min.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/mubende-logo.webp" as="image" />
+
+    <!-- JavaScript -->
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <!-- ====== SKIP LINK ====== -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ====== HEADER (exactly as other pages) ====== -->
+    <header>
+        <div class="header-content">
+            <img src="images/mubende-logo.webp" alt="Mubende Chamber of Commerce Logo – Supporting local business" class="logo" width="60" height="60" loading="lazy" decoding="async" />
+            <div class="site-title">MUBENDE CHAMBER OF COMMERCE</div>
+        </div>
+        <nav aria-label="Primary navigation">
+            <button id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="hamburger-icon" aria-hidden="true">☰</span>
+            </button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="join.html" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main id="main-content" role="main">
+        <h1 class="join-heading">Become a Member</h1>
+        <p class="join-subheading">Complete the form below to apply for membership. We look forward to having you!</p>
+
+        <div class="join-layout">
+            <!-- ====== FORM SECTION ====== -->
+            <section class="join-form-section" aria-labelledby="form-heading">
+                <h2 id="form-heading" class="visually-hidden">Membership Application Form</h2>
+                <form id="membership-form" action="thankyou.html" method="get" autocomplete="on">
+                    <!-- First Name -->
+                    <label for="first-name">
+                        First Name <span aria-hidden="true">*</span>
+                        <input type="text" id="first-name" name="first-name" title="Your first name" autocomplete="given-name" required />
+                    </label>
+
+                    <!-- Last Name -->
+                    <label for="last-name">
+                        Last Name <span aria-hidden="true">*</span>
+                        <input type="text" id="last-name" name="last-name" title="Your last name" autocomplete="family-name" required />
+                    </label>
+
+                    <!-- Organizational Title -->
+                    <label for="org-title">
+                        Organizational Title
+                        <input type="text" id="org-title" name="org-title" title="Your title within the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Director of Operations" />
+                        <small>Minimum 7 characters, letters, spaces, and hyphens only.</small>
+                    </label>
+
+                    <!-- Email -->
+                    <label for="email">
+                        Email Address <span aria-hidden="true">*</span>
+                        <input type="email" id="email" name="email" title="Your email address" autocomplete="email" placeholder="john.doe@example.com" required />
+                    </label>
+
+                    <!-- Mobile Phone -->
+                    <label for="phone">
+                        Mobile Phone <span aria-hidden="true">*</span>
+                        <input type="tel" id="phone" name="phone" title="Your mobile phone number" autocomplete="tel" required />
+                    </label>
+
+                    <!-- Business/Organization Name -->
+                    <label for="business-name">
+                        Business/Organization Name <span aria-hidden="true">*</span>
+                        <input type="text" id="business-name" name="business-name" title="Your business or organization name" autocomplete="organization" required />
+                    </label>
+
+                    <!-- Membership Level -->
+                    <label for="membership-level">
+                        Membership Level <span aria-hidden="true">*</span>
+                        <select id="membership-level" name="membership-level" title="Select your desired membership level" required>
+                            <option value="">— Please select —</option>
+                            <option value="np">NP Membership (non-profit, no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <!-- Business Description -->
+                    <label for="description">
+                        Business/Organization Description
+                        <textarea id="description" name="description" title="Describe your business or organization" rows="4"></textarea>
+                    </label>
+
+                    <!-- Timestamp (hidden) -->
+                    <input type="hidden" id="timestamp" name="timestamp" />
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Apply for Membership</button>
+                </form>
+            </section>
+
+            <!-- ====== MEMBERSHIP LEVEL CARDS ====== -->
+            <aside class="membership-cards" aria-labelledby="cards-heading">
+                <h2 id="cards-heading" class="visually-hidden">Membership Levels</h2>
+                <div class="cards-grid">
+                    <!-- NP Card -->
+                    <div class="card np-card">
+                        <h3>NP Membership</h3>
+                        <p>For non‑profit organizations</p>
+                        <p class="fee">No fee</p>
+                        <button class="modal-trigger" data-modal="modal-np">Learn More</button>
+                    </div>
+                    <!-- Bronze Card -->
+                    <div class="card bronze-card">
+                        <h3>Bronze</h3>
+                        <p>Entry level</p>
+                        <p class="fee">$100 / year</p>
+                        <button class="modal-trigger" data-modal="modal-bronze">Learn More</button>
+                    </div>
+                    <!-- Silver Card -->
+                    <div class="card silver-card">
+                        <h3>Silver</h3>
+                        <p>Enhanced visibility</p>
+                        <p class="fee">$250 / year</p>
+                        <button class="modal-trigger" data-modal="modal-silver">Learn More</button>
+                    </div>
+                    <!-- Gold Card -->
+                    <div class="card gold-card">
+                        <h3>Gold</h3>
+                        <p>Premium benefits</p>
+                        <p class="fee">$500 / year</p>
+                        <button class="modal-trigger" data-modal="modal-gold">Learn More</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- ====== MODALS (dialog elements) ====== -->
+        <dialog id="modal-np" class="membership-modal">
+            <div class="modal-content">
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>No annual fee</li>
+                    <li>Access to networking events</li>
+                    <li>Listing in the online directory</li>
+                    <li>Eligibility for grants and training</li>
+                </ul>
+                <button class="modal-close" data-modal="modal-np">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze" class="membership-modal">
+            <div class="modal-content">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Discounted event tickets</li>
+                    <li>Business promotion on social media</li>
+                    <li>Access to member‑only resources</li>
+                </ul>
+                <button class="modal-close" data-modal="modal-bronze">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver" class="membership-modal">
+            <div class="modal-content">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Premium listing in directory</li>
+                    <li>Free booth at annual trade fair</li>
+                    <li>Spotlight feature on home page</li>
+                    <li>Invitation to exclusive CEO roundtables</li>
+                </ul>
+                <button class="modal-close" data-modal="modal-silver">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold" class="membership-modal">
+            <div class="modal-content">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Priority spotlight position</li>
+                    <li>Complimentary event tickets</li>
+                    <li>Featured interview in chamber newsletter</li>
+                    <li>Direct access to board members</li>
+                    <li>Customized business support</li>
+                </ul>
+                <button class="modal-close" data-modal="modal-gold">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <!-- ====== FOOTER  ====== -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Mubende Chamber of Commerce</strong></p>
+                <p>Plot 5, Main Street, Mubende, Uganda</p>
+                <p>📞 <a href="tel:+256743769483">+256 743 769 483</a></p>
+                <p>📧 <a href="mailto:info@mubendechamber.org">info@mubendechamber.org</a></p>
+            </div>
+
+            <div class="social-media" role="group" aria-label="Social media links">
+                <a href="https://facebook.com/kabandaronaldofficial" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/kabanda.ronald.10" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="developer-info">
+                <p>&copy; <span id="year"></span> Mubende Chamber of Commerce</p>
+                <p>WDD231 | Ronald Kabanda | Mubende, Uganda</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

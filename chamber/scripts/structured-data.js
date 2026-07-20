@@ -40,6 +40,63 @@
                 email: 'info@mubendechamber.org',
                 areaServed: 'UG'
             }]
+        },
+        join: {
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'Mubende Chamber of Commerce',
+            url: 'https://kabandaronald70-create.github.io/wdd231/chamber/join.html',
+            logo: 'https://kabandaronald70-create.github.io/wdd231/chamber/images/mubende-logo.png',
+            sameAs: [
+                'https://facebook.com/kabandaronaldofficial',
+                'https://twitter.com/KABANDARONALD13',
+                'https://instagram.com/kabanda.ronald.10'
+            ],
+            contactPoint: [{
+                '@type': 'ContactPoint',
+                contactType: 'customer support',
+                telephone: '+256743769483',
+                email: 'info@mubendechamber.org',
+                areaServed: 'UG'
+            }]
+        },
+        thankyou: {
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'Mubende Chamber of Commerce',
+            url: 'https://kabandaronald70-create.github.io/wdd231/chamber/thankyou.html',
+            logo: 'https://kabandaronald70-create.github.io/wdd231/chamber/images/mubende-logo.png',
+            sameAs: [
+                'https://facebook.com/kabandaronaldofficial',
+                'https://twitter.com/KABANDARONALD13',
+                'https://instagram.com/kabanda.ronald.10'
+            ],
+            contactPoint: [{
+                '@type': 'ContactPoint',
+                contactType: 'customer support',
+                telephone: '+256743769483',
+                email: 'info@mubendechamber.org',
+                areaServed: 'UG'
+            }]
+        },
+        discover: {
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'Mubende Chamber of Commerce',
+            url: 'https://kabandaronald70-create.github.io/wdd231/chamber/discover.html',
+            logo: 'https://kabandaronald70-create.github.io/wdd231/chamber/images/mubende-logo.png',
+            sameAs: [
+                'https://facebook.com/kabandaronaldofficial',
+                'https://twitter.com/KABANDARONALD13',
+                'https://instagram.com/kabanda.ronald.10'
+            ],
+            contactPoint: [{
+                '@type': 'ContactPoint',
+                contactType: 'customer support',
+                telephone: '+256743769483',
+                email: 'info@mubendechamber.org',
+                areaServed: 'UG'
+            }]
         }
     };
 

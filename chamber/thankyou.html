@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mubende Chamber of Commerce – Thank You</title>
+    <meta name="description" content="Thank you for applying to join the Mubende Chamber of Commerce." />
+    <meta name="author" content="Ronald Kabanda" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mubende Chamber of Commerce – Thank You" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://kabandaronald70-create.github.io/wdd231/chamber/images/og-image-1.png" />
+    <meta property="og:url" content="https://kabandaronald70-create.github.io/wdd231/chamber/thankyou.html" />
+    <meta property="og:description" content="Thank you for your application to the Mubende Chamber of Commerce." />
+    <meta property="og:locale" content="en_US" />
+    <meta name="theme-color" content="#1B3A4B" />
+
+    <!-- JSON-LD Structured Data -->
+    <script src="scripts/structured-data.js" data-schema-page="thankyou" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon_io.ico" />
+    <link rel="apple-touch-icon" href="images/favicon_io.ico" />
+    <link rel="canonical" href="https://kabandaronald70-create.github.io/wdd231/chamber/thankyou.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.min.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Join CSS (shares some styles) -->
+    <link rel="stylesheet" href="styles/join.css" />
+
+    <!-- JavaScript for footer year/lastmodified -->
+    <script src="scripts/common.js" defer></script>
+</head>
+
+<body>
+    <!-- ====== SKIP LINK ====== -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <div class="header-content">
+            <img src="images/mubende-logo.webp" alt="Mubende Chamber of Commerce Logo – Supporting local business" class="logo" width="60" height="60" loading="lazy" decoding="async" />
+            <div class="site-title">MUBENDE CHAMBER OF COMMERCE</div>
+        </div>
+        <nav aria-label="Primary navigation">
+            <button id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="hamburger-icon" aria-hidden="true">☰</span>
+            </button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main id="main-content" role="main">
+        <section class="thankyou-section">
+            <h1>Thank You for Applying!</h1>
+            <p>We have received your membership application. Below are the details you submitted:</p>
+
+            <div class="thankyou-details" id="thankyou-details">
+                <!-- Populated by JavaScript from URL parameters -->
+            </div>
+
+            <p>We will review your application and contact you soon.</p>
+            <a href="index.html" class="cta-button">Return to Home</a>
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Mubende Chamber of Commerce</strong></p>
+                <p>Plot 5, Main Street, Mubende, Uganda</p>
+                <p>📞 <a href="tel:+256743769483">+256 743 769 483</a></p>
+                <p>📧 <a href="mailto:info@mubendechamber.org">info@mubendechamber.org</a></p>
+            </div>
+
+            <div class="social-media" role="group" aria-label="Social media links">
+                <a href="https://facebook.com/kabandaronaldofficial" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/KABANDARONALD13" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/kabanda.ronald.10" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="developer-info">
+                <p>&copy; <span id="year"></span> Mubende Chamber of Commerce</p>
+                <p>WDD231 | Ronald Kabanda | Mubende, Uganda</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to display submitted data -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const fields = [
+                { key: 'first-name', label: 'First Name' },
+                { key: 'last-name', label: 'Last Name' },
+                { key: 'email', label: 'Email Address' },
+                { key: 'phone', label: 'Mobile Phone' },
+                { key: 'business-name', label: 'Business/Organization Name' },
+                { key: 'timestamp', label: 'Submitted On' }
+            ];
+
+            const container = document.getElementById('thankyou-details');
+            let html = '<ul>';
+            fields.forEach(f => {
+                const val = params.get(f.key) || '—';
+                html += `<li><strong>${f.label}:</strong> ${val}</li>`;
+            });
+            html += '</ul>';
+            container.innerHTML = html;
+        });
+    </script>
+</body>
+</html>
