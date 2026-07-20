@@ -12,7 +12,7 @@
     --gray-text: #334155;
     --gold: #ffd700;
     --silver: #c0c0c0;
-    --bronze: #cd7f32;
+    --bronze: #8B4513;
     --shadow: rgba(0, 0, 0, 0.08);
     --shadow-dark: rgba(0, 0, 0, 0.2);
 }
@@ -750,7 +750,7 @@ footer {
 
 .weather-temp .feels-like {
     font-size: 0.85rem;
-    color: var(--gray-text);
+    color: #1a1a2e;
     opacity: 0.8;
 }
 
@@ -865,7 +865,7 @@ footer {
 }
 
 .spotlight-card .spotlight-details a {
-    color: #0056b3;
+    color: #003366;
     text-decoration: none;
     word-break: break-all;
 }

@@ -5,7 +5,7 @@ export const places = [
         title: "Mubende Town Centre",
         address: "Main Street, Mubende Municipality",
         description: "The bustling heart of Mubende, featuring local shops, markets, and government offices. A vibrant hub of commerce and community life.",
-        image: "town_centre.webp",
+        image: "mubende-town-centre.webp",
         alt: "Busy street scene in Mubende Town Centre"
     },
     {
