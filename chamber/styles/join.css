@@ -185,10 +185,12 @@ main {
   text-transform: none;
 }
 
-.np-card { background: var(--join-card); }
-.bronze-card { background: var(--join-card); }
-.silver-card { background: var(--join-card); }
-.gold-card { background: var(--join-card); }
+.np-card,
+.bronze-card,
+.silver-card,
+.gold-card {
+  background: var(--join-card);
+}
 
 .membership-modal {
   width: min(92vw, 790px);
@@ -250,12 +252,6 @@ main {
   font-weight: 400;
   border-radius: 0.4rem;
   cursor: pointer;
-}
-
-.membership-modal .modal-close {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
 }
 
 @media (max-width: 780px) {
