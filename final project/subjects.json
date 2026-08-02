@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Biology",
+        "category": "Science",
+        "level": "O-Level & A-Level",
+        "description": "Study of living organisms, their structure, function, growth, and evolution. Includes practical laboratory work and field studies."
+    },
+    {
+        "id": 2,
+        "name": "Chemistry",
+        "category": "Science",
+        "level": "O-Level & A-Level",
+        "description": "Exploration of matter, its properties, composition, and reactions. Emphasizes both theoretical knowledge and practical experimentation."
+    },
+    {
+        "id": 3,
+        "name": "Physics",
+        "category": "Science",
+        "level": "O-Level & A-Level",
+        "description": "Understanding the fundamental laws of nature, including mechanics, electricity, magnetism, and thermodynamics."
+    },
+    {
+        "id": 4,
+        "name": "Mathematics",
+        "category": "Mathematics",
+        "level": "O-Level & A-Level",
+        "description": "Development of logical reasoning and problem-solving skills through algebra, geometry, calculus, and statistics."
+    },
+    {
+        "id": 5,
+        "name": "English Language",
+        "category": "Languages",
+        "level": "O-Level & A-Level",
+        "description": "Comprehensive study of English grammar, literature, composition, and oral communication skills."
+    },
+    {
+        "id": 6,
+        "name": "Literature in English",
+        "category": "Languages",
+        "level": "O-Level & A-Level",
+        "description": "Critical analysis of prose, poetry, and drama from various literary traditions and time periods."
+    },
+    {
+        "id": 7,
+        "name": "History",
+        "category": "Humanities",
+        "level": "O-Level & A-Level",
+        "description": "Study of Uganda's history, East African history, and world events. Analyzes political, social, and economic developments."
+    },
+    {
+        "id": 8,
+        "name": "Geography",
+        "category": "Humanities",
+        "level": "O-Level & A-Level",
+        "description": "Exploration of physical and human geography, including landforms, climate, population, and resource management."
+    },
+    {
+        "id": 9,
+        "name": "Christian Religious Education",
+        "category": "Humanities",
+        "level": "O-Level & A-Level",
+        "description": "Study of Christian beliefs, values, and ethics. Includes biblical studies and application of Christian principles to daily life."
+    },
+    {
+        "id": 10,
+        "name": "Art and Design",
+        "category": "Creative Arts",
+        "level": "O-Level & A-Level",
+        "description": "Development of creative skills through drawing, painting, sculpture, and design. Encourages artistic expression and visual literacy."
+    },
+    {
+        "id": 11,
+        "name": "Music",
+        "category": "Creative Arts",
+        "level": "O-Level only",
+        "description": "Exploration of music theory, performance, and composition. Includes both Western and Ugandan musical traditions."
+    },
+    {
+        "id": 12,
+        "name": "Commerce",
+        "category": "Business Studies",
+        "level": "O-Level only",
+        "description": "Introduction to business principles, trade, marketing, and entrepreneurship. Prepares students for careers in commerce."
+    },
+    {
+        "id": 13,
+        "name": "Economics",
+        "category": "Business Studies",
+        "level": "A-Level only",
+        "description": "Advanced study of economic principles, markets, production, and national income. Analyzes both micro and macroeconomic concepts."
+    },
+    {
+        "id": 14,
+        "name": "Computer Studies / ICT",
+        "category": "ICT",
+        "level": "O-Level & A-Level",
+        "description": "Development of digital literacy, programming concepts, and practical ICT skills. Covers hardware, software, and internet technologies."
+    },
+    {
+        "id": 15,
+        "name": "Entrepreneurship",
+        "category": "Business Studies",
+        "level": "O-Level & A-Level",
+        "description": "Study of business creation, management, and innovation. Focuses on practical skills for starting and running a business."
+    },
+    {
+        "id": 16,
+        "name": "Luganda Language",
+        "category": "Languages",
+        "level": "O-Level & A-Level",
+        "description": "Study of the Luganda language, including grammar, composition, oral skills, and appreciation of Buganda culture."
+    },
+    {
+        "id": 17,
+        "name": "Agriculture",
+        "category": "Science",
+        "level": "O-Level only",
+        "description": "Introduction to farming practices, crop production, animal husbandry, and sustainable agricultural techniques."
+    },
+    {
+        "id": 18,
+        "name": "Physical Education",
+        "category": "Creative Arts",
+        "level": "O-Level only",
+        "description": "Development of physical fitness, sports skills, and teamwork through athletics, games, and outdoor activities."
+    }
+]

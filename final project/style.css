@@ -1,0 +1,983 @@
+/* ============================================================
+   MASTER STYLESHEET: Highway Secondary School Kiganda
+   Organized by page for clear editing
+   ============================================================ */
+
+/* ===== 0. RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FDF5E6; /* Cream */
+    color: #333333; /* Dark Grey */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: #1A4D2E; /* Primary Green */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 1.8rem;
+    border-left: 6px solid #8B4513; /* Chocolate accent */
+    padding-left: 0.8rem;
+}
+h3 {
+    font-size: 1.3rem;
+    color: #8B4513; /* Chocolate */
+}
+
+a {
+    color: #1A4D2E;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   COMMON COMPONENTS (Used across all pages)
+   ============================================================ */
+
+/* ----- HEADER & NAVIGATION ----- */
+header {
+    background-color: #1A4D2E;
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.logo img {
+    border-radius: 50%;
+}
+.logo span {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.hamburger .bar {
+    width: 28px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+nav ul li a {
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+}
+nav ul li a.active {
+    background: rgba(255, 255, 255, 0.25);
+    border-bottom: 3px solid #FDF5E6;
+}
+
+/* ----- PAGE HEADER (Common) ----- */
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.page-header h1 {
+    border-bottom: 4px solid #8B4513;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+.page-header p {
+    max-width: 700px;
+    margin: 0.8rem auto;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1A4D2E;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+footer a {
+    color: #FDF5E6;
+}
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-content p {
+    margin: 0.3rem 0;
+}
+#last-modified {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* ----- BACK LINK (Attributions & Form Action) ----- */
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #1A4D2E;
+    font-weight: 600;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   PAGE 1: INDEX.HTML (Home Page)
+   ============================================================ */
+
+/* Hero Section */
+.hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.hero-content {
+    flex: 1;
+    min-width: 280px;
+}
+.hero-content h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+.hero-content .motto {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    color: #8B4513;
+    font-style: italic;
+}
+.hero-image {
+    flex: 1;
+    min-width: 280px;
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #1A4D2E;
+    color: #FFFFFF;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+.cta-button:hover {
+    background-color: #0f3a22;
+    text-decoration: none;
+}
+
+/* Mission & Values */
+.mission-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.mission, .values {
+    background: #FFFFFF;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+}
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+.values ul li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+}
+.values ul li:last-child {
+    border-bottom: none;
+}
+
+/* Statistics */
+.stats {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.stat-card {
+    background: #FDF5E6;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #8B4513;
+}
+.stat-number {
+    display: block;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A4D2E;
+}
+.stat-label {
+    display: block;
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+/* Location */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-card {
+    background: #FFFFFF;
+    padding: 1.5rem 1.8rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    border-left: 6px solid #8B4513;
+    padding-left: 0.8rem;
+}
+
+.info-card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.info-card ul li:last-child {
+    border-bottom: none;
+}
+
+.info-card ul li em {
+    color: #666;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* ============================================================
+   PAGE 2: ACADEMICS.HTML
+   ============================================================ */
+
+/* Departments */
+.departments {
+    background: #FFFFFF;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+}
+.department-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+.department-list li {
+    background: #FDF5E6;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid #8B4513;
+    font-weight: 600;
+}
+.dept-icon {
+    margin-right: 0.4rem;
+}
+
+/* Subjects Grid */
+.subjects {
+    background: #FFFFFF;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+}
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+.subject-card {
+    background: #FDF5E6;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.subject-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.subject-card h3 {
+    margin-top: 0;
+    color: #1A4D2E;
+    font-size: 1.1rem;
+}
+.subject-card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+.subject-card .category {
+    display: inline-block;
+    background: #1A4D2E;
+    color: #FFFFFF;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.subject-card .level {
+    display: inline-block;
+    background: #8B4513;
+    color: #FFFFFF;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.3rem;
+}
+/* ============================================================
+   PAGE 2: ACADEMICS.HTML (Department Additions)
+   ============================================================ */
+
+/* Department List Items - Make them clickable */
+.department-list li {
+    background: #FDF5E6;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid #8B4513;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    user-select: none;
+}
+
+.department-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    background-color: #e8f0e8;
+}
+
+.department-list li:active {
+    transform: scale(0.96);
+}
+
+.department-list li .dept-icon {
+    margin-right: 0.4rem;
+}
+
+.dept-instruction {
+    color: #666;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+/* ===== DEPARTMENT MODAL ===== */
+.dept-modal .modal-content {
+    max-width: 550px;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Department Detail Card */
+.dept-detail-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Head Info Row */
+.dept-head-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #8B4513;
+}
+
+.dept-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1A4D2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dept-initials {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.dept-head-details h3 {
+    margin: 0;
+    color: #1A4D2E;
+    font-size: 1.2rem;
+}
+
+.dept-head-details .dept-head-title {
+    margin: 0;
+    color: #8B4513;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Contact Information */
+.dept-contact {
+    background: #FDF5E6;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #1A4D2E;
+}
+
+.dept-contact p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.dept-contact a {
+    color: #1A4D2E;
+    text-decoration: none;
+}
+.dept-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Description */
+.dept-description {
+    background: #f8f8f8;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.dept-description p {
+    margin: 0.4rem 0;
+}
+
+.dept-description p:last-child {
+    font-weight: 600;
+    color: #1A4D2E;
+    margin-top: 0.6rem;
+}
+
+/* ============================================================
+   PAGE 3: CONTACT.HTML
+   ============================================================ */
+
+/* Contact Info */
+.contact-info {
+    background: #FFFFFF;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+}
+.contact-details p {
+    margin: 0.5rem 0;
+}
+
+/* Staff Directory Heading */
+.contact-info h3 {
+    margin-top: 2rem;
+    border-left: 6px solid #8B4513; /* Chocolate accent */
+    padding-left: 0.8rem;
+    font-family: 'Merriweather', serif;
+    color: #1A4D2E;
+}
+
+/* Staff Grid Layout */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Individual Staff Card */
+.staff-card {
+    background: #FDF5E6; /* Cream background */
+    border: 1px solid #8B4513; /* Chocolate border */
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar / Profile Image Circle */
+.staff-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #1A4D2E; /* Primary Green */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.staff-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fallback Initials (hidden by default, shows if image fails) */
+.staff-avatar .initials {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A4D2E;
+    color: #FFFFFF;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Staff Info Text */
+.staff-info h4 {
+    margin: 0.2rem 0;
+    color: #6B3410; 
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.staff-info .staff-name {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #1A4D2E; /* Primary Green */
+    font-size: 1.1rem;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.staff-info p {
+    margin: 0.2rem 0;
+    font-size: 0.85rem;
+    color: #333333;
+}
+
+.staff-info p strong {
+    color: #333333;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    background: #FFFFFF;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.theme-toggle select {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #8B4513;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Forms */
+.inquiry-form, .admission-form {
+    background: #FFFFFF;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1A4D2E;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 77, 46, 0.2);
+}
+.submit-btn {
+    background-color: #1A4D2E;
+    color: #FFFFFF;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.submit-btn:hover {
+    background-color: #0f3a22;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0.8rem;
+    }
+
+    /* Mobile Navigation */
+    .hamburger {
+        display: flex;
+    }
+    nav {
+        display: none;
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+    nav.open {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0.5rem 0;
+    }
+    nav ul li a {
+        display: block;
+        padding: 0.6rem 0.8rem;
+    }
+
+    /* Home Page Adjustments */
+    .hero {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .mission-values {
+        grid-template-columns: 1fr;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Academics */
+    .subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .theme-toggle {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        border-left-width: 4px;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .department-list {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    .department-list li {
+        text-align: center;
+    }
+    .header-container {
+        flex-wrap: wrap;
+    }
+    .logo span {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================================
+   DARK THEME (Applied via JavaScript + Local Storage)
+   ============================================================ */
+body.dark-theme {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+body.dark-theme header {
+    background-color: #0d0d1a;
+}
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme h6 {
+    color: #8BC34A;
+}
+body.dark-theme h2 {
+    border-left-color: #8B4513;
+}
+body.dark-theme .hero,
+body.dark-theme .mission,
+body.dark-theme .values,
+body.dark-theme .stats,
+body.dark-theme .location,
+body.dark-theme .departments,
+body.dark-theme .subjects,
+body.dark-theme .contact-info,
+body.dark-theme .theme-toggle,
+body.dark-theme .inquiry-form,
+body.dark-theme .admission-form {
+    background-color: #16213e;
+    border-color: #8B4513;
+}
+body.dark-theme .stat-card,
+body.dark-theme .subject-card,
+body.dark-theme .department-list li {
+    background-color: #1a1a2e;
+    border-color: #8B4513;
+    color: #e0e0e0;
+}
+body.dark-theme .color-card {
+    background: #1a1a2e;
+}
+body.dark-theme .stat-number {
+    color: #8BC34A;
+}
+body.dark-theme footer {
+    background-color: #0d0d1a;
+}
+body.dark-theme .submission-data {
+    background: #16213e;
+}
+body.dark-theme .form-group input,
+body.dark-theme .form-group select,
+body.dark-theme .form-group textarea {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    border-color: #8B4513;
+}
+body.dark-theme .back-link {
+    color: #8BC34A;
+}
+body.dark-theme .info-card {
+    background-color: #16213e;
+    border-color: #8B4513;
+}
+
+body.dark-theme .info-card ul li {
+    border-bottom-color: #2a2a4a;
+}
+
+body.dark-theme .info-card ul li em {
+    color: #aaa;
+}
+/* Dark Theme - Staff Cards */
+body.dark-theme .staff-card {
+    background: #16213e;
+    border-color: #8B4513;
+}
+
+body.dark-theme .staff-info .staff-name {
+    color: #8BC34A;
+}
+
+body.dark-theme .staff-avatar {
+    background-color: #0d0d1a;
+}
+
+body.dark-theme .staff-avatar .initials {
+    background-color: #0d0d1a;
+    color: #8BC34A;
+}
+
+body.dark-theme .staff-info p {
+    color: #e0e0e0;
+}
+
+body.dark-theme .staff-info p strong {
+    color: #e0e0e0;
+}
+
+body.dark-theme .contact-info h3 {
+    color: #8BC34A;
+}
+/* Dark Theme - Departments & Department Modal */
+body.dark-theme .department-list li {
+    background: #1a1a2e;
+    border-color: #8B4513;
+    color: #e0e0e0;
+}
+
+body.dark-theme .department-list li:hover {
+    background: #2a2a4a;
+}
+
+body.dark-theme .dept-instruction {
+    color: #aaa;
+}
+
+body.dark-theme .dept-modal .modal-content {
+    background-color: #16213e;
+    border-color: #8B4513;
+}
+
+body.dark-theme .dept-head-details h3 {
+    color: #8BC34A;
+}
+
+body.dark-theme .dept-head-details .dept-head-title {
+    color: #e0a060;
+}
+
+body.dark-theme .dept-contact {
+    background: #1a1a2e;
+}
+
+body.dark-theme .dept-description {
+    background: #1a1a2e;
+}
+
+body.dark-theme .dept-description p:last-child {
+    color: #8BC34A;
+}
+
+body.dark-theme .dept-contact a {
+    color: #8BC34A;
+}

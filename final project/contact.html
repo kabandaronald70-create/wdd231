@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO & Meta Tags -->
+    <title>Highway Secondary School Kiganda | Contact &amp; Inquiries</title>
+    <meta name="description" content="Contact Highway Secondary School Kiganda. Submit inquiries, book admission appointments, and find our location in Kiganda Town Council, Kassanda District, Uganda." />
+    <meta name="author" content="Kabanda Ronald" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact & Inquiries - Highway Secondary School Kiganda" />
+    <meta property="og:description" content="Contact Highway Secondary School Kiganda. Submit inquiries, book admission appointments, and find our location." />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Master CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ES Module -->
+    <script type="module" src="js/contact.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/highway_logo.webp" alt="Highway Secondary School Kiganda Logo" width="50" height="50" loading="lazy" />
+                <span>Highway SS Kiganda</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <section class="page-header">
+            <h1>Contact &amp; Inquiries</h1>
+            <p>We would love to hear from you! Reach out to us with any questions, or book an admission appointment for your child.</p>
+        </section>
+
+        <!-- ===== CONTACT INFORMATION & STAFF DIRECTORY ===== -->
+<section class="contact-info">
+    <h2>Get in Touch</h2>
+
+    <!-- 1. General Contact Details -->
+    <div class="contact-details">
+        <p><strong>📞 Phone:</strong> +256 700 123 456</p>
+        <p><strong>📧 Email:</strong> info@highwaysecondarykiganda.sc.ug</p>
+        <p><strong>📍 Address:</strong> Kiganda Town Council, Kassanda District, along the Mubende-Highway Road, Uganda</p>
+    </div>
+
+    <!-- 2. Staff Directory -->
+    <h3>School Administration</h3>
+    <div class="staff-grid">
+
+        <!-- Headteacher -->
+        <div class="staff-card">
+            <div class="staff-avatar">
+                <img src="images/ziwa.webp" alt="Headteacher - Mr. Zziwa Vicent" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                <span class="initials">ZV</span>
+            </div>
+            <div class="staff-info">
+                <h4>Headteacher</h4>
+                <p class="staff-name">Mr. Zziwa Vicent</p>
+                <p><strong>📞</strong> +256 712 345 678</p>
+                <p><strong>📧</strong> headteacher@hsskiganda.sc.ug</p>
+            </div>
+        </div>
+
+        <!-- Director -->
+        <div class="staff-card">
+            <div class="staff-avatar">
+                <img src="images/bisaso.webp" alt="Director - Mr. Robert Ssebunya" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                <span class="initials">HAB</span>
+            </div>
+            <div class="staff-info">
+                <h4>Director</h4>
+                <p class="staff-name">Hajji. Abdul Bisaso</p>
+                <p><strong>📞</strong> +256 700 123 456</p>
+                <p><strong>📧</strong> director@hsskiganda.sc.ug</p>
+            </div>
+        </div>
+
+        <!-- Director of Studies -->
+        <div class="staff-card">
+            <div class="staff-avatar">
+                <img src="images/dos_high.webp" alt="Director of Studies - Ms. Grace Nakato" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                <span class="initials">SS</span>
+            </div>
+            <div class="staff-info">
+                <h4>Director of Studies</h4>
+                <p class="staff-name">Mr. Ssekatawa Swalik</p>
+                <p><strong>📞</strong> +256 752 111 222</p>
+                <p><strong>📧</strong> dos@hsskiganda.sc.ug</p>
+            </div>
+        </div>
+
+        <!-- Bursar -->
+        <div class="staff-card">
+            <div class="staff-avatar">
+                <img src="images/nalongo.webp" alt="Bursar - Mr. Paul Ssali" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                <span class="initials">PS</span>
+            </div>
+            <div class="staff-info">
+                <h4>Bursar</h4>
+                <p class="staff-name">Mr. Paul Ssali</p>
+                <p><strong>📞</strong> +256 703 444 555</p>
+                <p><strong>📧</strong> bursar@hsskiganda.sc.ug</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Theme Toggle (Local Storage) -->
+        <div class="theme-toggle">
+            <label for="theme-select">Choose Theme:</label>
+            <select id="theme-select">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+
+        <!-- Inquiry Form -->
+        <section class="inquiry-form">
+            <h2>Send Us a Message</h2>
+            <form id="inquiry-form" action="form-action.html" method="GET">
+                <div class="form-group">
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject of Inquiry *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject...</option>
+                        <option value="admission">Admission Inquiry</option>
+                        <option value="academics">Academic Programs</option>
+                        <option value="fees">School Fees</option>
+                        <option value="facilities">School Facilities</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </section>
+
+        <!-- Admission Booking Form -->
+        <section class="admission-form">
+            <h2>Book an Admission Appointment</h2>
+            <p>Fill in the details below to schedule a visit and receive introductory registration information.</p>
+            <form id="admission-form" action="form-action.html" method="GET">
+                <div class="form-group">
+                    <label for="student-name">Student's Full Name *</label>
+                    <input type="text" id="student-name" name="student-name" required placeholder="Enter student's full name" />
+                </div>
+                <div class="form-group">
+                    <label for="parent-name">Parent/Guardian Name *</label>
+                    <input type="text" id="parent-name" name="parent-name" required placeholder="Enter parent/guardian name" />
+                </div>
+                <div class="form-group">
+                    <label for="parent-email">Parent/Guardian Email *</label>
+                    <input type="email" id="parent-email" name="parent-email" required placeholder="Enter parent/guardian email" />
+                </div>
+                <div class="form-group">
+                    <label for="parent-phone">Parent/Guardian Phone *</label>
+                    <input type="tel" id="parent-phone" name="parent-phone" required placeholder="Enter phone number" />
+                </div>
+                <div class="form-group">
+                    <label for="preferred-date">Preferred Visit Date</label>
+                    <input type="date" id="preferred-date" name="preferred-date" />
+                </div>
+                <div class="form-group">
+                    <label for="admission-level">Admission Level *</label>
+                    <select id="admission-level" name="admission-level" required>
+                        <option value="">Select level...</option>
+                        <option value="o-level">O-Level (S1 - S4)</option>
+                        <option value="a-level-art">A-Level - Arts (S5 - S6)</option>
+                        <option value="a-level-science">A-Level - Science (S5 - S6)</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Kabanda Ronald | Highway Secondary School Kiganda</p>
+            <p>
+                <a href="attributions.html">Attributions</a> |
+                <a href="https://youtu.be/your-video-link" target="_blank">Video Demonstration</a>
+            </p>
+            <p id="last-modified">Last modified: <span id="modified-date"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lastMod = document.lastModified;
+            const dateSpan = document.getElementById('modified-date');
+            if (dateSpan) {
+                const dateObj = new Date(lastMod);
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                dateSpan.textContent = dateObj.toLocaleDateString('en-US', options);
+            }
+        });
+    </script>
+
+</body>
+</html>

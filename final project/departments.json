@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "name": "Science",
+        "icon": "🔬",
+        "headName": "Mr. Gerald Babi",
+        "headTitle": "Head of Science Department",
+        "phone": "+256 782 345 678",
+        "email": "science@hsskiganda.sc.ug",
+        "description": "The Science Department offers Biology, Chemistry, and Physics at both O-Level and A-Level. Our state-of-the-art laboratories provide hands-on practical experience.",
+        "staffCount": 12
+    },
+    {
+        "id": 2,
+        "name": "Humanities",
+        "icon": "📖",
+        "headName": "Mr. Brian Kaddu",
+        "headTitle": "Head of Humanities Department",
+        "phone": "+256 702 456 789",
+        "email": "humanities@hsskiganda.sc.ug",
+        "description": "The Humanities Department covers History, Geography, and Christian Religious Education, fostering critical thinking and cultural awareness.",
+        "staffCount": 8
+    },
+    {
+        "id": 3,
+        "name": "Creative Arts",
+        "icon": "🎨",
+        "headName": "Mr. Denis Kabiito",
+        "headTitle": "Head of Creative Arts Department",
+        "phone": "+256 772 567 890",
+        "email": "arts@hsskiganda.sc.ug",
+        "description": "The Creative Arts Department offers Art and Design, Music, and Physical Education, nurturing creativity, expression, and physical development.",
+        "staffCount": 5
+    },
+    {
+        "id": 4,
+        "name": "Languages",
+        "icon": "🌍",
+        "headName": "Ms. Irene Nambusi",
+        "headTitle": "Head of Languages Department",
+        "phone": "+256 752 678 901",
+        "email": "languages@hsskiganda.sc.ug",
+        "description": "The Languages Department offers English Language, Literature in English, French, and Luganda, promoting communication skills and cultural appreciation.",
+        "staffCount": 9
+    },
+    {
+        "id": 5,
+        "name": "Business Studies",
+        "icon": "📊",
+        "headName": "Mr. Peter Walugembe",
+        "headTitle": "Head of Business Studies Department",
+        "phone": "+256 782 789 012",
+        "email": "business@hsskiganda.sc.ug",
+        "description": "The Business Studies Department offers Commerce, Economics, and Entrepreneurship, preparing students for careers in business and finance.",
+        "staffCount": 6
+    },
+    {
+        "id": 6,
+        "name": "ICT",
+        "icon": "💻",
+        "headName": "Mr. Hezekiah Muwanguzi",
+        "headTitle": "Head of ICT Department",
+        "phone": "+256 792 890 123",
+        "email": "ict@hsskiganda.sc.ug",
+        "description": "The ICT Department offers Computer Studies and practical digital skills, preparing students for the technology-driven world.",
+        "staffCount": 4
+    },
+    {
+        "id": 7,
+        "name": "Mathematics",
+        "icon": "📐",
+        "headName": "Mr. Godfrey Ssekayombya",
+        "headTitle": "Head of Mathematics Department",
+        "phone": "+256 702 901 234",
+        "email": "maths@hsskiganda.sc.ug",
+        "description": "The Mathematics Department develops logical reasoning, problem-solving, and analytical skills through a comprehensive mathematics curriculum.",
+        "staffCount": 7
+    }
+]

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form Submission - Highway Secondary School Kiganda</title>
+    <meta name="description" content="Form submission confirmation for Highway Secondary School Kiganda." />
+    <meta name="author" content="Kabanda Ronald" />
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Page-specific minimal styling */
+        .submission-data {
+            background: #f8f8f8;
+            border-left: 6px solid #1A4D2E;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .submission-data p {
+            margin: 0.5rem 0;
+        }
+        .submission-data strong {
+            color: #1A4D2E;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: #1A4D2E;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/school-logo.svg" alt="Highway Secondary School Kiganda Logo" width="50" height="50" loading="lazy" />
+                <span>Highway SS Kiganda</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Thank You for Your Submission</h1>
+            <p>Your inquiry has been received. You will be contacted via your attached email.</p>
+        </section>
+
+        <section class="submission-data" id="form-data-display">
+            <!-- Dynamically populated by JavaScript -->
+            <p><em>Loading submitted data...</em></p>
+        </section>
+
+        <a href="index.html" class="back-link">&larr; Return to Home</a>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Kabanda Ronald | Highway Secondary School Kiganda</p>
+            <p>
+                <a href="attributions.html">Attributions</a> |
+                <a href="https://youtu.be/your-video-link" target="_blank">Video Demonstration</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Display URL Search Params on the form action page
+        (function displayFormData() {
+            const params = new URLSearchParams(window.location.search);
+            const display = document.getElementById('form-data-display');
+
+            if (params.size === 0) {
+                display.innerHTML = '<p>No data submitted.</p>';
+                return;
+            }
+
+            let html = '<h3>Submitted Information</h3>';
+            const labels = {
+                'full-name': 'Full Name',
+                'email': 'Email Address',
+                'phone': 'Phone Number',
+                'subject': 'Subject of Inquiry',
+                'message': 'Message',
+                'student-name': 'Student Name',
+                'parent-name': 'Parent/Guardian Name',
+                'parent-email': 'Parent/Guardian Email',
+                'parent-phone': 'Parent/Guardian Phone',
+                'preferred-date': 'Preferred Visit Date',
+                'admission-level': 'Admission Level'
+            };
+
+            // Use forEach array method to process data
+            params.forEach((value, key) => {
+                const label = labels[key] || key.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                if (value.trim() !== '') {
+                    html += `<p><strong>${label}:</strong> ${value}</p>`;
+                }
+            });
+
+            display.innerHTML = html;
+        })();
+    </script>
+</body>
+</html>
