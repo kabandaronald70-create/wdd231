@@ -43,14 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 throw new Error('No subject data found.');
             }
 
-            // ===== ARRAY METHOD (forEach) =====
             // Display subject count
             if (countDisplay) {
                 countDisplay.textContent = `Total Subjects: ${subjects.length}`;
             }
 
             // ===== ARRAY METHOD (map) + TEMPLATE LITERALS =====
-            // Generate HTML for each subject
             const subjectCards = subjects.map(subject => `
                 <div class="subject-card" data-id="${subject.id}" data-name="${subject.name}" data-category="${subject.category}" data-level="${subject.level}" data-description="${subject.description}">
                     <h3>${subject.name}</h3>
