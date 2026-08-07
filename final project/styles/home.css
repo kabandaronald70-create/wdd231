@@ -1,0 +1,211 @@
+/* ============================================================
+   HOMEPAGE STYLESHEET: Highway Secondary School Kiganda
+   Contains styles specific to index.html only
+   ============================================================ */
+
+/* Hero Section */
+.hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.hero-content {
+    flex: 1;
+    min-width: 280px;
+}
+.hero-content h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+.hero-content .motto {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    color: #8B4513;
+    font-style: italic;
+}
+.hero-image {
+    flex: 1;
+    min-width: 280px;
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #1A4D2E;
+    color: #FFFFFF;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+.cta-button:hover {
+    background-color: #0f3a22;
+    text-decoration: none;
+}
+
+/* Mission & Values */
+.mission-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.mission,
+.values {
+    background: #FFFFFF;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+}
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+.values ul li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+}
+.values ul li:last-child {
+    border-bottom: none;
+}
+
+/* Statistics */
+.stats {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.stat-card {
+    background: #FDF5E6;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #8B4513;
+}
+.stat-number {
+    display: block;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A4D2E;
+}
+.stat-label {
+    display: block;
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+/* Information Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-card {
+    background: #FFFFFF;
+    padding: 1.5rem 1.8rem;
+    border-radius: 12px;
+    border: 1px solid #8B4513;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    border-left: 6px solid #8B4513;
+    padding-left: 0.8rem;
+}
+
+.info-card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.info-card ul li:last-child {
+    border-bottom: none;
+}
+
+.info-card ul li em {
+    color: #666;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Homepage responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .mission-values {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Homepage dark theme */
+body.dark-theme .hero,
+body.dark-theme .mission,
+body.dark-theme .values,
+body.dark-theme .stats {
+    background-color: #16213e;
+    border-color: #8B4513;
+}
+
+body.dark-theme .info-card {
+    background-color: #16213e;
+    border-color: #8B4513;
+}
+
+body.dark-theme .info-card ul li {
+    border-bottom-color: #2a2a4a;
+}
+
+body.dark-theme .info-card ul li em {
+    color: #aaa;
+}

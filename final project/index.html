@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
     <!-- SEO & Meta Tags -->
     <title>Highway Secondary School Kiganda | Home</title>
-    <meta name="description" content="Highway Secondary School Kiganda - A leading secondary school in Kassanda District, Uganda. Explore our mission, academic programs, and community." />
-    <meta name="author" content="Kabanda Ronald" />
+    <meta name="description" content="Highway Secondary School Kiganda - A leading secondary school in Kassanda District, Uganda. Explore our mission, academic programs, and community." >
+    <meta name="author" content="Kabanda Ronald" >
 
     <!-- Open Graph / Social Sharing -->
-    <meta property="og:title" content="Highway Secondary School Kiganda" />
-    <meta property="og:description" content="Highway Secondary School Kiganda - A leading secondary school in Kassanda District, Uganda." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourdomain.com/final/" />
+    <meta property="og:title" content="Highway Secondary School Kiganda" >
+    <meta property="og:description" content="Highway Secondary School Kiganda - A leading secondary school in Kassanda District, Uganda." >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://yourdomain.com/final/" >
 
    <!-- === FAVICON === -->
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" >
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" >
 
     <!-- Master CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" >
+    <link rel="stylesheet" href="styles/home.css" >
 
     <!-- ES Module -->
-    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="images/highway_logo.webp" alt="Highway Secondary School Kiganda Logo" width="50" height="50" loading="lazy" />
+                <img src="images/highway_logo.webp" alt="Highway Secondary School Kiganda Logo" width="50" height="50" loading="lazy" >
                 <span>Highway SS Kiganda</span>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -69,7 +70,7 @@
                 <a href="academics.html" class="cta-button">Explore Our Programs</a>
             </div>
             <div class="hero-image">
-                <img src="images/highway_hero.webp" alt="Highway Secondary School Kiganda Campus" loading="lazy" width="600" height="400" />
+                <img src="images/highway_hero.webp" alt="Highway Secondary School Kiganda Campus" loading="lazy" width="600" height="400" >
             </div>
         </section>
 
@@ -168,24 +169,11 @@
             <p>&copy; 2025 Kabanda Ronald | Highway Secondary School Kiganda</p>
             <p>
                 <a href="attributions.html">Attributions</a> |
-                <a href="https://youtu.be/your-video-link" target="_blank">Video Demonstration</a>
+                <a href="https://youtu.be/RLeIvHkNtjQ" target="_blank">Video Demonstration</a>
             </p>
             <p id="last-modified">Last modified: <span id="modified-date"></span></p>
         </div>
     </footer>
-
-    <script>
-        // Auto-display last modified date
-        document.addEventListener('DOMContentLoaded', function() {
-            const lastMod = document.lastModified;
-            const dateSpan = document.getElementById('modified-date');
-            if (dateSpan) {
-                const dateObj = new Date(lastMod);
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                dateSpan.textContent = dateObj.toLocaleDateString('en-US', options);
-            }
-        });
-    </script>
 
 </body>
 </html>
