@@ -130,5 +130,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Auto-display last modified date
+    const lastMod = document.lastModified;
+    const dateSpan = document.getElementById('modified-date');
+    if (dateSpan) {
+        const dateObj = new Date(lastMod);
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        dateSpan.textContent = dateObj.toLocaleDateString('en-US', options);
+    }
+
     console.log('Contact page initialized successfully.');
 });
