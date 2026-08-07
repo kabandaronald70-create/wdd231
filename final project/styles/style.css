@@ -129,7 +129,8 @@ nav ul li a:hover {
     text-decoration: none;
 }
 nav ul li a.active {
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(15, 58, 34, 0.8);
+    color: #FFFFFF;
     border-bottom: 3px solid #FDF5E6;
 }
 
